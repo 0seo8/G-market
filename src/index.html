@@ -60,19 +60,58 @@
       <!-- 광고쿠폰영역 -->
       <div class="insuranceAD">
         <a href="/" class="insuranceAD__link">
-          <img src="./assets/header/header__coupon.jpeg" alt="보험사 할인쿠폰">
+          <img src="./header/header__coupon.jpeg" alt="보험사 할인쿠폰">
         </a>
       </div>
 
+      <!-- 마이페이지 등 아이콘 영역 -->
       <div class="buttonArea">
-        <button type="button" class="button button--myPage" aria-label="마이페이지"></button>
-        <button type="button" class="button button--recentlyItem" aria-label="최근본상품"></button>
-        <button type="button" class="button button--cart" aria-label="장바구니"></button>
+        <ul class="buttonArea__list">
+          <li class="buttonArea__item" aria-label="마이페이지"><a href="#" class="buttonArea__link"><img src="./header/image__header-mypage.svg" alt="마이페이지" aria-hidden="true"></a></li>
+          <li class="buttonArea__item" aria-label="최근본상품"><a href="#" class="buttonArea__link"><img src="./header/image__header-recent.svg" alt="최근본상품" aria-hidden="true"></a></li>
+          <li class="buttonArea__item" aria-label="장바구니"><a href="#" class="buttonArea__link"><img src="./header/image__header-cart.svg" alt="장바구니" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+
+      <!-- 카테고리 버튼 -->
+      <button type="button" class="categoryBtn">전체 카테고리</button>
+
+      <!-- 네비게이션바 -->
+      <div class="navigationBar">
+        <ul class="navigationBar__list">
+          <li class="navigationBar__item"><a href="#" class="navigationBar__link">베스트</a></li>
+          <li class="navigationBar__item"><a href="#" class="navigationBar__link">슈퍼딜</a></li>
+          <li class="navigationBar__item"><a href="#" class="navigationBar__link">쿠폰·출첵</a></li>
+          <li class="navigationBar__item">
+            <a href="#" class="navigationBar__link">
+              <span class="new-badge">N</span>
+              스마일배송
+            </a>
+          </li>
+          <li class="navigationBar__item"><a href="#" class="navigationBar__link smile">스마트클럽</a></li>
+          <li class="navigationBar__item">
+            <a href="#" class="navigationBar__link smile">
+              <span class="new-badge">N</span>
+              스마트클럽비즈
+            </a>
+          </li>
+        </ul>
+      </div>
+  
+      <!-- 로그인바 -->
+      <div class="loginBar">
+        <ul class="loginBar__list">
+          <li class="loginBar__item"><a href="#" class="loginBar__link">로그인</a></li>
+          <li class="loginBar__item"><a href="#" class="loginBar__link">회원가입</a></li>
+          <li class="loginBar__item"><a href="#" class="loginBar__link">고객센터</a></li>
+          <li class="loginBar__item">
+            <button type="button" >Global</button>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
 
-<!--   네비게이션 영역   -->
 </body>
 
 </html>

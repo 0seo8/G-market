@@ -26,6 +26,12 @@ module.exports = {
         use: [
           'babel-loader'
         ]
+      },
+      {
+        test: /\.(png|jpg)$/,
+        use: [
+          'file-loader'
+        ]
       }      
     ]
   },
