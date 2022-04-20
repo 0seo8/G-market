@@ -33,7 +33,8 @@
       }
 
       .logo--colorful {
-        background-image: url('http://pics.gmarket.co.kr/pc/single/kr/common/image__logo.png');
+        // background-image: url('http://pics.gmarket.co.kr/pc/single/kr/common/image__logo.png');
+        background: url('../../dist/logo/image__logo.png') no-repeat center / 2.2rem;
       }
     }
   }
