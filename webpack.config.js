@@ -10,9 +10,13 @@ module.exports = {
     filename: 'main.js',
     clean: true,
   },
+  resolve: {
+    alias: {
+      'assets': path.resolve(__dirname, 'src/assets')
+    }
+  },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.s?css$/,
         use: [
           'style-loader',
@@ -27,23 +31,6 @@ module.exports = {
           'babel-loader'
         ]
       },
-      {
-        test: /\.(png|jpg)$/,
-        use: [
-          'file-loader'
-        ]
-      },
-    //   {
-    //     test: /\.(png|jpg|jpeg|gif)$/,
-    //     exclude: /node_module/,
-    //     use: {
-    //       loader: "url-loader",
-    //       options: {
-    //         name: "assets/[name].[hash].[ext]",
-    //         fallback: "file-loader",
-    //       },
-    //     },
-    //  },      
     ]
   },
   plugins: [

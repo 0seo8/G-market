@@ -1,7 +1,7 @@
 //헤더영역
 
 .header__inner {
-  // position: relative;
+  position: relative;
   margin-top: 4rem;
   width: 120rem;
   height: 17.3rem;
@@ -14,7 +14,9 @@
   // 로고영역
   .brand {
     position: absolute;
-    top: 0;
+    left: -4rem;
+    top: -50%;
+    transform: translateY(43%);
     margin-top: 0;
     margin-bottom: 0;
 
@@ -33,15 +35,15 @@
       }
 
       .logo--colorful {
-        // background-image: url('http://pics.gmarket.co.kr/pc/single/kr/common/image__logo.png');
-        background: url('../../dist/logo/image__logo.png') no-repeat center / 2.2rem;
+        background: url('http://pics.gmarket.co.kr/pc/single/kr/common/image__logo.png') 0 50% / cover;
+        // background: url('../../dist/logo/image__logo.png') no-repeat center / 2.2rem;
       }
     }
   }
 
   // 검색폼영역
   .searchForm {
-    padding-left: 24rem;  
+    padding-left: 19rem;  
 
 
     fieldset{
@@ -65,7 +67,7 @@
           height: 100%;
           
           .formInput__input {
-            // width: 54.9rem;
+            width: 51.7rem;
             height: 100%;
             border: 0;
             padding: .7rem .8rem .8rem;
@@ -80,22 +82,58 @@
           height: 3.2rem;
           border: 0;
           // background: url('http://pics.gmarket.co.kr/pc/single/kr/common/image__header-search.png') no-repeat center / 2.2rem;
-          background: url('../../dist/header/image__header-search.png') no-repeat center / 2.2rem;
+          background: url('~assets/header/image__header-search.png') no-repeat center / 2.2rem;        
         }
       }
       
+    }
+  }
 
-      .button--search {
+  // 광고쿠폰영역
+  .insuranceAD {
+    display: flex;
+    justify-content: center;
+    height: 7rem;
+    flex-grow: 1;
+    margin-left: 2rem;
+  }
 
+  //마이페이지 등 아이콘 영역
+  .buttonArea__list {
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    .buttonArea__item {
+      width: 7.35rem;
+      height: 8rem;
+      display: flex;
+      align-items: top;
+      justify-content: center;
+      &:nth-child(3) {
+        width: 5.35rem;
+        justify-content: flex-end;
       }
     }
   }
 
-
-  // 광고쿠폰영역
-
-  //마이페이지 등 아이콘 영역
-
+  .categoryBtn {
+    border: 0;
+    width: 22.4rem;
+    height: 6rem;
+    background-color: $booking-color-green-700;
+    padding: 1.7rem 0 2rem;
+    color: $booking-color-white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    // background: url('../../dist/header/hamburger.svg') no-repeat cover;
+    &::before {
+      display: inline-block;
+      background: url('https://pics.gmarket.co.kr/pc/sprite/kr/common/sprite__common.png') no-repeat;
+      background-size: 400px auto;
+      text-indent: -9999px;
+    }
+  }
   //카테고리 버튼 h60rem
 
   //네비게이션바
