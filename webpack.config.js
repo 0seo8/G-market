@@ -32,7 +32,18 @@ module.exports = {
         use: [
           'file-loader'
         ]
-      }      
+      },
+    //   {
+    //     test: /\.(png|jpg|jpeg|gif)$/,
+    //     exclude: /node_module/,
+    //     use: {
+    //       loader: "url-loader",
+    //       options: {
+    //         name: "assets/[name].[hash].[ext]",
+    //         fallback: "file-loader",
+    //       },
+    //     },
+    //  },      
     ]
   },
   plugins: [

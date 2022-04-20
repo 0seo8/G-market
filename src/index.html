@@ -29,7 +29,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="./stylesheet/main.scss">
 </head>
 
 <body>
@@ -49,11 +48,13 @@
       <form action="/" class="searchForm" method="GET">
         <fieldset>
           <legend class="sr-only">검색폼</legend>
-          <div class="formInput">
-            <label for="searchKeyword" class="sr-only">검색어</label>
-            <input type="search" class="formInput__input" id="searchKeyword" required >
+          <div class="searchForm__wrapper">
+            <div class="formInput">
+              <label for="searchKeyword" class="sr-only">검색어</label>
+              <input type="search" class="formInput__input" id="searchKeyword" required >
+            </div>  
+            <button type="button" class="button--search" aria-label="검색"></button>
           </div>
-          <button type="button" class="button--search" aria-label="검색"></button>
         </fieldset>
       </form>
 

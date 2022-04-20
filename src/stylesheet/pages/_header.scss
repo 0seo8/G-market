@@ -1,12 +1,102 @@
 //헤더영역
 
 .header__inner {
+  // position: relative;
+  margin-top: 4rem;
   width: 120rem;
+  height: 17.3rem;
   margin-right: auto;
   margin-left: auto;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   background-color: yellow;
-}
 
-// 로고영역
+  // 로고영역
+  .brand {
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    .brand__link {
+      display: block;
+
+      .logo {
+        height: 11.3rem;
+        width: 24rem;
+      }
+
+      .logo--ir {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .logo--colorful {
+        background-image: url('http://pics.gmarket.co.kr/pc/single/kr/common/image__logo.png');
+      }
+    }
+  }
+
+  // 검색폼영역
+  .searchForm {
+    padding-left: 24rem;  
+
+
+    fieldset{
+      padding: 0;
+      margin: 0;
+      border: 0;
+      display: flex;
+      
+      .searchForm__wrapper {
+        height: 4.4rem;
+        border: 2px solid $booking-color-blue-500;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        border-radius: 2.4rem;
+        overflow: hidden;
+        padding-right: 1.2rem;
+        
+        .formInput {
+          flex-grow: 1;
+          height: 100%;
+          
+          .formInput__input {
+            // width: 54.9rem;
+            height: 100%;
+            border: 0;
+            padding: .7rem .8rem .8rem;
+            text-indent: 1rem;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+        .button--search {
+          width: 3.2rem;
+          height: 3.2rem;
+          border: 0;
+          background: url('http://pics.gmarket.co.kr/pc/single/kr/common/image__header-search.png') no-repeat center / 2.2rem;
+        }
+      }
+      
+
+      .button--search {
+
+      }
+    }
+  }
+
+
+  // 광고쿠폰영역
+
+  //마이페이지 등 아이콘 영역
+
+  //카테고리 버튼 h60rem
+
+  //네비게이션바
+
+  //로그인바
+}
