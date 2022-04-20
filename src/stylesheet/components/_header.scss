@@ -1,0 +1,235 @@
+//헤더영역
+
+.header__inner {
+  position: relative;
+  margin-top: 4rem;
+  width: 120rem;
+  height: 13.3rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-flow: row wrap;
+
+  // 로고영역
+  .brand {
+    position: absolute;
+    left: -4rem;
+    top: -30%;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    .brand__link {
+      display: block;
+
+      .logo {
+        height: 11.3rem;
+        width: 24rem;
+      }
+
+      .logo--ir {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .logo--colorful {
+        background-image: url('~assets/logo/image__logo.png');
+      }
+    }
+  }
+
+  // 검색폼영역
+  .searchForm {
+    padding-left: 19rem;
+
+
+    fieldset {
+      padding: 0;
+      margin: 0;
+      border: 0;
+      display: flex;
+
+      .searchForm__wrapper {
+        height: 4.4rem;
+        border: 2px solid $booking-color-blue-500;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        border-radius: 2.4rem;
+        overflow: hidden;
+        padding-right: 1.2rem;
+
+        .formInput {
+          flex-grow: 1;
+          height: 100%;
+
+          .formInput__input {
+            width: 51.7rem;
+            height: 100%;
+            border: 0;
+            padding: .7rem .8rem .8rem;
+            text-indent: 1rem;
+
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+
+        .button--search {
+          width: 3.2rem;
+          height: 3.2rem;
+          border: 0;
+          background: url('~assets/header/image__header-search.png') no-repeat center / 2.2rem;
+        }
+      }
+
+    }
+  }
+
+  // 광고쿠폰영역
+  .insuranceAD {
+    display: flex;
+    justify-content: center;
+    height: 7rem;
+    flex-grow: 1;
+    margin-left: 2rem;
+  }
+
+  //마이페이지 등 아이콘 영역
+  .buttonArea__list {
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+
+    .buttonArea__item {
+      width: 7.35rem;
+      display: flex;
+      align-items: top;
+      justify-content: center;
+
+      &:nth-child(3) {
+        width: 5.35rem;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  .categoryBtn {
+    position: relative;
+    display: flex;
+    border: 0;
+    width: 22.4rem;
+    height: 6rem;
+    background-color: $booking-color-green-700;
+    padding: 1.7rem 0 2rem;
+    color: $booking-color-white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: -1px;
+
+    &::before {
+      margin-left: 2.3rem;
+      position: absolute;
+      content: '';
+      display: inline-block;
+      background: url('~assets/header/hamburger.svg') no-repeat 10% 0% / contain;
+      width: 2.6rem;
+      height: 2.1rem;
+    }
+
+    .categoryBtn__text {
+      display: inline-block;
+      padding-left: 6rem;
+    }
+  }
+
+  // 네비게이션바, 로그인 바 공통
+
+  [class*="__list"] {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  [class*="__item"] {
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    line-height: 2;
+    display: block;
+    letter-spacing: -1px;
+    white-space: nowrap;
+  }
+
+  //네비게이션바
+  .navigationBar {
+    margin-top: 0.6rem;
+    flex-grow: 1;
+
+    .navigationBar__list {
+      width: 22rem;
+
+      .navigationBar__item {
+        position: relative;
+        .navigationBar__link {
+          padding-left: 2.5rem;
+          color: $booking-color-black-100;
+          &.smile {
+            color: $booking-color-brown-100;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+  //로그인바
+  .loginBar {
+    margin-top: 0.6rem;
+    .loginBar__list {
+      .loginBar__item {
+        .loginBar__link {
+          color: $booking-color-gray-700;
+          font-size: 1.4rem;
+        }
+
+        button {
+          position: relative;
+          padding: 0;
+          padding-right: .3rem;
+          border: 0;
+          background-color: transparent;
+          color: $booking-color-gray-700;
+          
+          &::after, &::before {
+            content: '';
+            position: absolute;
+            right: -1rem;
+            top: 1.2rem;
+            transform: translateY(-50%);
+          }
+          &::before {
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid $booking-color-gray-700;
+          }
+          &::after {
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid #fff;
+            top: 9.5px;
+          }
+        }
+      }
+      .divider {
+        padding-top: .8rem;
+        padding-bottom: .8rem;
+        line-height: 2;
+        color: $booking-color-gray-700;
+      }
+    }
+  }
+}

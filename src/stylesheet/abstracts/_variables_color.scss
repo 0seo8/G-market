@@ -1,13 +1,14 @@
 /* Theme */
-$booking-color-black: #222;
+$booking-color-black-100: #000;
+$booking-color-black-200: #222;
 $booking-color-white: #FFFFFF;
 $booking-color-gray-100: #F3F3F3;
-$booking-color-gray-200: #E7E7E7;
+$booking-color-gray-200: #DDD;
 $booking-color-gray-300: #DCDCDC;
 $booking-color-gray-400: #D0D0D0;
 $booking-color-gray-500: #C4C4C4;
 $booking-color-gray-600: #AAA9A9;
-$booking-color-gray-700: #767676;
+$booking-color-gray-700: #777;
 $booking-color-gray-800: #4E4E4E;
 $booking-color-gray-900: #272727;
 $booking-color-blue-100: #CCEAFA;
@@ -47,7 +48,7 @@ $booking-color-green-600: #9FA417;
 $booking-color-green-700: #10af29;
 $booking-color-green-800: #50520C;
 $booking-color-green-900: #282906;
-$booking-color-brown-100: #DFD5D4;
+$booking-color-brown-100: #C09F76; 
 $booking-color-brown-200: #BFABA9;
 $booking-color-brown-300: #9D7A6D;
 $booking-color-brown-400: #7E5852;
@@ -75,6 +76,6 @@ html{
 }
 
 body{
-  color: $booking-color-black;
+  color: $booking-color-black-200;
   background:$booking-color-white;
 }
