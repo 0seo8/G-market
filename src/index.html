@@ -15,15 +15,15 @@
   <meta property="og:image" content="https://pics.gmarket.co.kr/pc/single/kr/common/sns/gmarket_sns.png" />
   <meta http-equiv="x-dns-prefetch-control" content="on">
 
-  <!-- favicon -->
+  <!-- Favicon -->
   <link rel="shortcut icon" href="./gmarket.ico" type="image/x-icon">
 
-  <!-- normalize -->
+  <!-- Normalize -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- googlefont -->
+  <!-- Googlefont -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
@@ -33,7 +33,46 @@
 </head>
 
 <body>
-  <h1>Hello SASS</h1>
+<!--   HEADER영역   -->
+  <header class="header">
+    <div class="header__inner">
+      <!-- 로고 -->
+      <h1 class="brand">
+        <a href="https://gmarket.co.kr/" class="brand__link">
+          <figure class="logo logo--ir logo--colorful">
+            <span class="sr-only">Gmarket</span>
+          </figure>
+        </a>
+      </h1>
+
+      <!-- 검색 폼 -->
+      <form action="/" class="searchForm" method="GET">
+        <fieldset>
+          <legend class="sr-only">검색폼</legend>
+          <div class="formInput">
+            <label for="searchKeyword" class="sr-only">검색어</label>
+            <input type="search" class="formInput__input" id="searchKeyword" required >
+          </div>
+          <button type="button" class="button--search" aria-label="검색"></button>
+        </fieldset>
+      </form>
+
+      <!-- 광고쿠폰영역 -->
+      <div class="insuranceAD">
+        <a href="/" class="insuranceAD__link">
+          <img src="./assets/header/header__coupon.jpeg" alt="보험사 할인쿠폰">
+        </a>
+      </div>
+
+      <div class="buttonArea">
+        <button type="button" class="button button--myPage" aria-label="마이페이지"></button>
+        <button type="button" class="button button--recentlyItem" aria-label="최근본상품"></button>
+        <button type="button" class="button button--cart" aria-label="장바구니"></button>
+      </div>
+    </div>
+  </header>
+
+<!--   네비게이션 영역   -->
 </body>
 
 </html>
