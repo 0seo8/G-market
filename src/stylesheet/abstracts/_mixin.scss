@@ -1,0 +1,11 @@
+$asset-path: "~assets/font/";
+
+@mixin font-face($name, $file, $weight: noraml, $style: normal) {
+  @font-face {
+    font-family: "#{$name}";
+    src: url("#{$asset-path}#{$file}.otf") format("otf"),
+      url("#{$asset-path}#{$file}.ttf") format("truetype");
+    font-weight: $weight;
+    font-style: $style;
+  }
+}

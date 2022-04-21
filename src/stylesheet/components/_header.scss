@@ -1,5 +1,6 @@
 //헤더영역
 
+
 .header__inner {
   position: relative;
   margin-top: 4rem;
@@ -114,6 +115,7 @@
   }
 
   .categoryBtn {
+    bottom: -.1rem;
     position: relative;
     display: flex;
     border: 0;
@@ -134,6 +136,18 @@
       background: url('~assets/header/hamburger.svg') no-repeat 10% 0% / contain;
       width: 2.6rem;
       height: 2.1rem;
+    }
+
+    &::after {
+      z-index: 99;
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: -.1rem;
+      // transform: translateY(-50%);
+      width: 22.4rem;
+      height: 0.2rem;
+      background: linear-gradient(to bottom,  $booking-color-green-700 0%, $booking-color-green-600 100%);
     }
 
     .categoryBtn__text {
