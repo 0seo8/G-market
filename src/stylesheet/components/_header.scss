@@ -99,9 +99,6 @@
   //마이페이지 등 아이콘 영역
   .buttonArea__list {
     display: flex;
-    padding-left: 0;
-    margin: 0;
-    list-style: none;
 
     .buttonArea__item {
       width: 7.35rem;
@@ -148,9 +145,6 @@
   // 네비게이션바, 로그인 바 공통
 
   [class*="__list"] {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
     display: flex;
     justify-content: space-between;
   }
