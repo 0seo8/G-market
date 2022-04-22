@@ -3,29 +3,6 @@
   height: 40rem;
   position: relative;
 
-
-  .dimmed-layer--left,
-  .dimmed-layer--right {
-    content: '';
-    position: absolute;
-    top: 0;
-    height: 100%;
-    cursor: pointer;
-    background-color: rgba(37, 39, 41, 0.3)
-  }
-
-  .dimmed-layer--left {
-    left: 0;
-    right: 50%;
-    margin-right: 60rem;
-  }
-
-  .dimmed-layer--right {
-    left: 50%;
-    right: 0;
-    margin-left: 60rem;
-  }
-
   .navigation__inner {
     position: relative;
     margin-left: 22.4rem;
@@ -36,6 +13,7 @@
   // 카테고리 영역
   .category__inner {
     position: relative;
+    width: 40rem;
 
     .category__depth1 {
       position: relative;
@@ -207,38 +185,141 @@
     position: absolute;
     top: 0;
     z-index: -10;
+    width: 100%;
+    height: 100%;
 
     .swiper-container {
-      margin-left: 23rem;
-      position: relative;
+      position: absolute;
       height: 40rem;
-      width: 967px;
+      width: calc(97.6rem * 7);
+      left: 50%;
+      margin-left: calc(((97.6rem * 7) / -2) + 11.2rem);
+      top: 0;
 
       .swiper-wrapper {
         display: flex;
 
         .swiper-slide {
-        }   
+          position: relative;
+
+          &::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(37, 39, 41, 0.3);
+            position: absolute;
+          }
+        }
+
+        .swiper-slide-active {
+          &::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: transparent;
+            position: absolute;
+          }
+        }
+      }
+
     }
 
     .box__tool {
-      overflow: hidden;
+      display: flex;
       position: absolute;
-      bottom: 18px;
-      right: 19px;
+      height: 4rem;
+      bottom: 1.8rem;
+      right: 1.9rem;
       z-index: 10;
+      font-size: 1.8rem;
+
+      .material-symbols-outlined {
+        font-size: 4rem;
+      }
+
+      button {
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+      }
+
+      .button__play-control {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #CAD1CD;
+        opacity: .8;
+      }
+
+      .swiper-pagination {
+        color: $booking-color-white;
+        line-height: 4rem;
+        width: 7.6rem;
+        height: 4rem;
+        margin-left: 0.6rem;
+        position: static;
+        background: url('~assets/icons/sprite__homemain.svg') -332px -121px no-repeat;
+        z-index: 0;
+        .swiper-pagination-current {
+          font-weight: 700;
+        }
+      }
+
+      .button__more {
+        margin-right: 0.1rem;
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+
+        &::after {
+          content: '';
+          top: 0;
+          position: absolute;
+          display: block;
+          background: url('~assets/icons/sprite__homemain.svg') no-repeat -292px -46px;
+          width: 4rem;
+          height: 4rem;
+        }
+      }
     }
 
-    .swiper-button-prev {
-
+    .material-symbols-outlined {
+      display: flex;
+      color: $booking-color-white;
+      font-weight: 200;
+      justify-content: center;
     }
 
-    .swiper-button-next {
-      right: 2.1rem;
+    .swiper-prev,
+    .swiper-next {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      width: 4.6rem;
+      height: 7rem;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
 
+      .material-symbols-outlined {
+        font-size: 7rem;
+        text-shadow: -1px 1px 3px $booking-color-gray-600;
+      }
     }
+
+    .swiper-prev {
+      left: 24.7rem;
+    }
+
+    .swiper-next {
+      right: 3rem;
+    }
+
+
   }
-
-}
 
 }
