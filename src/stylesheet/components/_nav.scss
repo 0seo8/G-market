@@ -207,18 +207,17 @@
     position: absolute;
     top: 0;
     z-index: -10;
-    right: -50%;
-    transform: translateX(50%);
 
     .swiper-container {
+      margin-left: 23rem;
       position: relative;
       height: 40rem;
+      width: 967px;
 
       .swiper-wrapper {
         display: flex;
 
         .swiper-slide {
-          padding-left: 37.6rem;
         }   
     }
 
@@ -231,22 +230,12 @@
     }
 
     .swiper-button-prev {
-      top: 167px;
-      width: auto;
-      height: auto;
-      margin: 0;
-      background: none;
-      padding: 4px;
 
     }
 
     .swiper-button-next {
-      top: 167px;
-      width: auto;
-      height: auto;
-      margin: 0;
-      background: none;
-      padding: 4px;
+      right: 2.1rem;
+
     }
   }
 
