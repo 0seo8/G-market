@@ -1,5 +1,5 @@
 $asset-path: "~assets/font/";
-
+$sprite-url: '~assets/icons/sprite__homemain.svg';
 @mixin font-face($name, $file, $weight: noraml, $style: normal) {
   @font-face {
     font-family: "#{$name}";
@@ -8,4 +8,10 @@ $asset-path: "~assets/font/";
     font-weight: $weight;
     font-style: $style;
   }
+}
+
+@mixin sprite-img($sprite-position) {
+  background-image: url($sprite-url);
+  background-repeat: no-repeat;
+  background-position: $sprite-position;
 }

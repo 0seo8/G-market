@@ -1,0 +1,11 @@
+// 배너영역
+
+.banner {
+  margin-top: 4rem;
+  height: 10rem;
+  overflow: hidden;
+  .banner__image {
+    display: block;
+    border-radius: .6rem;
+  }
+}

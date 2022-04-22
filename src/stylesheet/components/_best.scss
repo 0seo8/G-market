@@ -1,0 +1,181 @@
+// 베스트 상품 영역
+
+html {
+  height: 1000000px;
+}
+
+section.best.inner{
+  margin-top: 5rem;
+}
+
+.best__headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .title {
+    font-family: 'Gothic A1', sans-serif; 
+    font-size: 2.4rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .show-all {
+    display: block;
+    position: relative;
+    color: $booking-color-gray-700;
+    line-height: 1.8rem;
+    z-index: 10;
+    padding-right: 2.2rem;
+    width: 10rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      @include sprite-img(0 -44px);
+      width: 1.8rem;
+      height: 1.8rem;
+      margin-left: 1rem;
+    }
+  }
+}
+
+// 베스트 리스트
+.best__list {
+  position: relative;
+  list-style: none;
+  margin-top: 3rem;
+  padding-left: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: calc(24.4rem * 5);
+  overflow: hidden;
+
+  .best__item {
+    width: 24.4rem;
+    height: 31.4rem;
+    padding: 0 1rem;
+
+    .best__link {
+      display: block;
+
+      img {
+        width: 22.4rem;
+      }
+    }
+  }
+}
+
+.product {
+  position: relative;
+
+  .product__card {
+    text-align: center;
+    
+    .image--dimmed-layer {
+      overflow: hidden;
+      position: relative;
+      width: 22.4rem;
+      height: 22.4rem;
+      margin: 0 auto;
+      border-radius: 50%;
+      &::before {
+        content: '';
+        position: absolute;
+        box-sizing: content-box;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 50%;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.03);
+      }
+      .product__image {
+        display: block;
+        transition: transform .2s cubic-bezier(.165, .84, .44, 1), -webkit-transform .2s cubic-bezier(.165, .84, .44, 1);
+        position: relative;
+
+        &::after {
+          content: '';
+          width: 22.15rem;
+          height: 22.15rem;
+          box-sizing: content-box;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border-radius: 50%;
+          z-index: 20;
+          border: 1.5px solid rgba(0,0,0, 0.07);
+          
+        }
+      }
+    }
+
+    .product__caption {
+      text-align: center;
+      margin: 1.8rem 1.2rem 0;
+      white-space: wrap;
+      font-size: 1.4rem;
+      line-height: 1.9rem;
+      letter-spacing: -.5px;
+    }
+  }
+  .product__rank {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 30;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    background-color: $booking-color-green-500;
+    font-weight: bold;
+    color: $booking-color-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .product__price {
+    font-family: sans-serif; 
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.6rem;
+    .price {
+      font-weight: bold;
+      font-size: 1.9rem;
+      font-style: normal;
+      margin-left: 0.1em;
+    }
+    .currencyUnit {
+      font-size: 1.6rem;
+      font-weight: normal;
+      margin-left: 0.1em;
+    }
+  }
+
+}
+
+.button__prev {
+  position: absolute;
+  @include sprite-img(0 0);
+  width: 4.2rem;
+  height: 4.2rem;
+  top: 43%;
+  left: -1%;
+  z-index: 10;
+}
+
+.button__next {
+  position: absolute;
+  @include sprite-img(-42px 0);
+  width: 4.2rem;
+  height: 4.2rem;
+  top: 43%;
+  right:-2%;
+  z-index: 10;
+}
