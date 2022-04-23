@@ -8,39 +8,6 @@ section.best.inner{
   margin-top: 5rem;
 }
 
-.best__headline {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  .title {
-    font-family: 'Gothic A1', sans-serif; 
-    font-size: 2.4rem;
-    padding: 0;
-    margin: 0;
-  }
-
-  .show-all {
-    display: block;
-    position: relative;
-    color: $booking-color-gray-700;
-    line-height: 1.8rem;
-    z-index: 10;
-    padding-right: 2.2rem;
-    width: 10rem;
-
-    &::after {
-      content: '';
-      position: absolute;
-      display: inline-block;
-      @include sprite-img(0 -44px);
-      width: 1.8rem;
-      height: 1.8rem;
-      margin-left: 1rem;
-    }
-  }
-}
-
 // 베스트 리스트
 .best__list {
   position: relative;
