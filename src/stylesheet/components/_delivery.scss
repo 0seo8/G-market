@@ -2,9 +2,7 @@
 #tab-1-content,
 #tab-2-content,
 #tab-3-content,
-#tab-4-content,
-#tab-5-content,
-#tab-6-content {
+#tab-4-content {
 	display: none;
 	opacity: 0;
 }
@@ -13,5 +11,23 @@
 	display: block !important;
 	opacity: 1 !important;
 	transition: all 1000 ease-in;
+}
+
+
+.delivery {
+	padding-top: 5rem;
+	display: flex;
+	flex-flow: row nowrap;
+
+	.deliveryUnit {
+		width: 57.4rem;
+
+		
+		}
+
+
+	.delivery__Gmarket {
+		margin-right: 5.2rem;
+	}
 }
 

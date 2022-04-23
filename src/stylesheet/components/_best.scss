@@ -5,7 +5,21 @@ html {
 }
 
 section.best.inner{
+  width: 123.2rem;
+}
+
+.best {
   margin-top: 5rem;
+  height: 37.8rem;
+
+  position: relative;
+  .swiper-container {
+    width: clac(14.4rem * 5);
+    height: 31.6rem;
+    position: absolute;
+    background-color: aliceblue;
+  } 
+
 }
 
 // 베스트 리스트
@@ -18,7 +32,7 @@ section.best.inner{
   flex-flow: row nowrap;
   justify-content: space-between;
   width: calc(24.4rem * 5);
-  overflow: hidden;
+  // overflow: hidden;
 
   .best__item {
     width: 24.4rem;
@@ -143,6 +157,6 @@ section.best.inner{
   width: 4.2rem;
   height: 4.2rem;
   top: 43%;
-  right:-2%;
+  right:0;
   z-index: 10;
 }
