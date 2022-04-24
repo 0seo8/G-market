@@ -1,13 +1,35 @@
 // 네비게이션 영역
 .navigation { 
   height: 40rem;
+  position: relative;
 
   .navigation__inner {  
-    position: relative;
-    margin-left: 22.4rem;
+    height: 100%;
     width: 120rem;
     margin: 0 auto;
-    z-index: 1;
+    z-index: -1;
+
+    .box__dimmed-left,
+    .box__dimmed-right {
+      content: '';
+      position: absolute;
+      top: 0;
+      z-index: 20;
+      bottom: 0;
+      background-color: rgba(37, 39, 41, 0.3);
+      cursor: pointer;
+    }
+
+    .box__dimmed-left{
+      left: 0;
+      right: 50%;
+      margin-right: 600px;
+    }
+    .box__dimmed-right{
+      right: 0;
+      left: 50%;
+      margin-left: 60rem;
+    }
   }
 
   .is--close {
@@ -16,7 +38,7 @@
 
   // 카테고리 영역
   .category {
-    width: 22.4rem;
+    width: 120rem;
 
     .category__inner {
       position: relative;
@@ -26,10 +48,14 @@
         position: relative;
         background-color: $booking-color-green-600;
         width: 22.4rem;
-
-        &::after {
+        &::before {
+          content: '';
           position: absolute;
-          background: ulr('~assets/images/image__cagegory-dimmed.png') no-repeat;
+          background: url('~assets/images/image__cagegory-dimmed.png') no-repeat;
+          left: -2.5rem;
+          width: 2.5rem;
+          top: 0;
+          height: 40rem;
         }
 
         .category__item {
@@ -55,11 +81,11 @@
             border-top: 1px solid $booking-color-gray-100;
             background-color: $booking-color-white;
             overflow: hidden;
-            width: 0;
+            width: 120rem;
 
             .category__depth2__section {
               padding-left: 3.5rem;
-              display: none;
+              // display: none;
 
               &:nth-child(2),
               &:nth-child(3),
@@ -191,16 +217,16 @@
   .promotion {
     position: absolute;
     top: 0;
-    z-index: -10;
-    width: 100%;
+    z-index: -1;
+    width: 120rem;
     height: 100%;
 
     .swiper-container {
       position: absolute;
       height: 40rem;
-      width: calc(97.6rem * 7);
-      left: 50%;
-      margin-left: calc(((97.6rem * 7) / -2) + 11.2rem);
+      width: calc(97.6rem * 7 );
+      left: calc(50% + 11.2rem);
+      margin-left: - calc(97.6rem * 7 / 2);
       top: 0;
 
       .swiper-wrapper {
@@ -208,16 +234,6 @@
 
         .swiper-slide {
           position: relative;
-
-          &::after {
-            content: '';
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background-color: rgba(37, 39, 41, 0.3);
-            position: absolute;
-          }
         }
 
         .swiper-slide-active {
