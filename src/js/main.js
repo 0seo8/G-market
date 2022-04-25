@@ -1,25 +1,12 @@
 // import Swiper from 'swiper'
 import '../stylesheet/main.scss'
 import  { NavSwiper, bestSwiper, delSwiper} from './nav.js';
+import {Wrapper} from './tablist.js'
 
-const tabItems = document.querySelectorAll('.tabs__inner .brand');
-const tabContentItems = document.querySelectorAll('.tab-content .offer__list');
 
-function selectItem(e) {
-  removeShow();
-  const tabContentItem = document.querySelector(`#${this.id}-content`);
-  tabContentItem.classList.add('show');
-}
 
-function removeShow() {
-  tabContentItems.forEach(item => {
-    item.classList.remove('show');
-  });
-}
-
-tabItems.forEach(item => {
-  item.addEventListener('click', selectItem )
-});
+Wrapper('delivery__Gmarket')
+Wrapper('delivery__smile')
 
 document.querySelectorAll('.rank').forEach((el, i) => {
   el.innerText = i + 1;

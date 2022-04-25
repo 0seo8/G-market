@@ -1,20 +1,21 @@
-const tabContentItems = document.querySelectorAll('.tab-content-item');
-const tabItems = document.querySelectorAll('.tab-item');
+export function Wrapper(tabParent) {
+  const tabItems = document.querySelectorAll(`.${tabParent} .tab`);
+  const tabContentItems = document.querySelectorAll(`.${tabParent} .offer__list`);
+  const gotoLink = document.querySelector(`.${tabParent} #gotoLink`)
 
-function selectItem() {
-  removeShow();
-
-  const tabContentItem = document.querySelector(`#${this.id}-content`);
-  tabContentItem.classList.add('show');
-}
-
-function removeShow() {
-  tabContentItems.forEach(item => {
-    item.classList.remove('show');
+  function selectItem() {
+    gotoLink.innerText = this.innerText + ' 바로가기';
+    const tabContentItem = document.querySelector(`.${tabParent} #${this.id}-content`);
+    removeShow();
+    tabContentItem.classList.add('show');
+  }
+  
+  function removeShow() {
+    tabContentItems.forEach(item => {
+      item.classList.remove('show');
+    });
+  }
+  tabItems.forEach(item => {
+    item.addEventListener('click', selectItem )
   });
 }
-
-tabItems.forEach(item => {
-  item.addEventListener('mouseover', selectItem )
-});
-
