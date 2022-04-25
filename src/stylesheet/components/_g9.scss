@@ -1,0 +1,56 @@
+.direct-purchase {
+  padding: 4rem 0 7rem;
+  margin-top: 5rem;
+  background-color: #f2f2f2;
+
+  .direct-purchase__headline {
+    margin-bottom: 2rem;
+  }
+
+  .direct-purchase__main {
+    display: flex;
+  }
+
+  .direct-purchase__content {
+    flex-grow: 1;
+    padding: 0 4rem;
+    height: 39.2rem;
+    position: relative;
+    height: 392px;
+    background-color: $booking-color-white;
+    box-shadow: 0 1px 0 0 $booking-color-opacity-10;
+    border-radius: .6rem;
+  }
+
+  .product__price {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .direct-purchase__title {
+    margin-top: 4rem;
+    text-align: center;
+    .sub-title {
+      padding: .4rem 0;
+      color: $booking-color-gray-800
+    }
+  }
+  .main-title {
+    margin-top: 1.4rem;
+    font-size: 3.1rem;
+    font-family: Gmarket Sans,'Gmarket Sans',sans-serif;
+    font-weight: 300;
+  }
+  .dp__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .desc__text {
+      padding: 0;
+      margin: 0;
+      margin-top: 1rem;
+    }
+  }
+}
