@@ -1,0 +1,165 @@
+.is--active {
+  .salesService__list {
+    display: flex;
+  }
+}
+
+.footer {
+  background-color: $booking-color-white-300;
+  border-top: 1px solid $booking-color-white-500;
+  font-size: 1.4rem;
+  color: $booking-color-black-500;
+  font-weight: 300;
+
+  // customerGuide
+  .customerGuide{
+    display: flex;
+    padding: 1.5rem 0 1.7rem;
+    border-bottom: 1px solid $booking-color-gray-300;
+  }
+
+  .customerGuide__list {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 0;
+  }
+
+  .salesService {
+    position: relative;
+    .salesService__btn {
+      width: 11.7rem;
+      height: 3.4rem;
+      border: 1px solid $booking-color-white-600;
+      background-color: $booking-color-white;
+      border-radius: .3rem;
+      line-height: 1.4rem;
+      color: $booking-color-black-500;
+      cursor: pointer;
+    }
+    .salesService__list {
+      position: absolute;
+      right: 0;
+      top: 3.8rem;
+      width: 21.9rem;
+      border-radius: .2rem;
+      border: solid 1px $booking-color-gray-600;
+      background-color: $booking-color-white;
+      padding: 1.6rem 0 2rem;
+      flex-flow: column nowrap;
+      gap: 1rem;
+      padding-left: 3rem;
+      display: none;
+      .salesService__link {
+        display: block;
+        font-size: 1.4rem;
+        padding: .3rem 0;
+        color: $booking-color-gray-700;
+      }
+    }
+  }
+
+  //지마켓글로벌유한책임회사
+
+  .Information {
+    display: flex;
+    padding: 1.3rem 0;
+    justify-content: space-between;
+    border-bottom: 1px solid $booking-color-gray-300;
+
+    .Information__title {
+      line-height: 2rem;
+      margin: 0;
+      font-size: 1.4rem;
+    }
+    .Information__item {
+      font-size: 1.3rem;
+      color: $booking-color-white-800;
+      letter-spacing: -.5px;
+      margin-top: 1rem;
+      .button {
+        font-size: 1.3rem;
+        display: inline-block;
+        line-height: 2rem;
+        height: 2rem;
+        margin: .3rem;
+        border: 1px solid $booking-color-white-600;
+        background-color: $booking-color-white;
+        border-radius: .3rem;
+        vertical-align: middle;
+        cursor: pointer;
+        .button_click {
+          display: block;
+        }
+      }
+    }
+  }
+  .divider {
+    display: inline-block;
+    width: .1rem;
+    height: 1.2rem;
+    border-left: 1px solid $booking-color-gray-500;
+  }
+
+  .payment-notice {
+    border-bottom: 1px solid $booking-color-gray-300;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+    color: $booking-color-white-700;
+    .first, .second {
+      display: flex;
+      margin-top: 1rem;
+      align-items: cetner;
+      gap: 2rem;
+    }
+    .title {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+    .item__list {
+      font-size: 1.3rem;
+      color: $booking-color-white-800;
+      letter-spacing: -0.5px;
+    }
+  }
+
+  .copyrightArea {
+    color: $booking-color-white-800;
+    margin-top: 1rem;
+    .copyright {
+      display: flex;
+      flex-flow: column nowrap;
+      span {
+        margin-top: .5rem;
+        display: inline-block;
+        font-size: 1.2rem;
+      }
+    }
+    .copyright__last {
+      margin-top: 1.5rem;
+      margin-bottom: 8.5rem;
+      height: 19.5rem;
+      img {
+        margin-right: 1rem;
+      }
+      span {
+        margin-right: 1rem;
+      }
+    }
+    .underline {
+      text-decoration: underline;
+    }
+    .before {
+      &::after {
+        content: '콘텐츠산업 진흥법에 따른 표시';
+        text-decoration: underline;
+        margin-left: 1rem;
+      }
+    }
+  }
+
+
+
+}
+

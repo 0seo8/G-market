@@ -21,14 +21,16 @@
 	display: flex;
 	flex-flow: row nowrap;
 	background-color: aliceblue;
+	justify-content: space-between;
 
+	.delivery__headline  {
+		padding-right: 1rem;
+	}
 	.deliveryUnit {
 		width: 57.4rem;
 	}
 
 	.delivery__Gmarket {
-		margin-right: 5.2rem;
-
 		.delevery__banner {
 			background-color: $booking-color-green-400;
 		}

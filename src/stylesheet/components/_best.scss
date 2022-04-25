@@ -1,7 +1,7 @@
 // 베스트 상품 영역
 
 html {
-  height: 1000000px;
+  height: 100000000px;
 }
 
 section.best.inner{
@@ -13,6 +13,9 @@ section.best.inner{
   position: relative;
   height: 38rem;
 
+  .best__headline {
+    padding-right: 2rem;
+  }
   .swiper-container {
     width: calc(24rem * 5);
     position: absolute;

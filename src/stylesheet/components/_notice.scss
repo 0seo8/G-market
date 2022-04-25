@@ -1,0 +1,31 @@
+.notice {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin: 5.6rem auto;
+  display: flex;
+  align-items: center;
+  .notice__title {
+    padding-right: 1.9rem;
+    margin: 0;
+    .notice__link {
+      display: block;
+      font-size: 1.4rem;
+      color: $booking-color-gray-600;
+      .text {
+        display: block;
+        &::after {
+          content: '';
+          position: absolute;
+          width: 1.6rem;
+          height: 1.6rem;
+          display: inline-block;
+          line-height: 2.2rem;
+          @include sprite-img(-154px -162px);
+        }
+      }
+    }
+    .link__notice {
+      color: $booking-color-gray-700;
+    }
+  }
+}

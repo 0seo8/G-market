@@ -1,6 +1,7 @@
 .divider {
   color: $booking-color-gray-200;
   margin: 0 .8rem;
+  display: inline-block;
 }
 
 .new-badge {
@@ -30,7 +31,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-right: 2rem;
   .title {
     font-family: Gmarket Sans,'Gmarket Sans',sans-serif;
     font-size: 2.4rem;
@@ -64,14 +64,14 @@
 	display: block;
 	opacity: 1;
 	transition: all 1000 ease-in;
-}
-
+} 
 // 가격
 .product__price {
   font-family: sans-serif; 
   margin-top: 1rem;
   text-align: center;
   font-size: 1.6rem;
+  display: block;
   .price {
     font-weight: bold;
     font-size: 1.9rem;
@@ -83,4 +83,11 @@
     font-weight: normal;
     margin-left: 0.1em;
   }
+}
+
+.ad_btn {
+  @include sprite-img(-154px -144px);
+  width: 2rem;
+  height: 1.4rem;
+  display: inline-block;
 }

@@ -73,5 +73,19 @@ const serSwiper = new Swiper('.video .swiper-container', {
   },
 })
 
+const chaSwiper = new Swiper('.chance .swiper-container', {
+  autoplay: { 
+    delay: 1000
+  },
+  slidesPerView: 3,
+  slidesPerGroup : 1,
+  centeredSlides: true, 
+  loop: true, 
+  navigation: {
+    nextEl: '.button__next',
+    prevEl: '.button__prev',
+  },
+})
 
-export { NavSwiper, bestSwiper, delSwiper, serSwiper}
+
+export { NavSwiper, bestSwiper, delSwiper, serSwiper, chaSwiper}
