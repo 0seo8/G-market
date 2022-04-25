@@ -1,13 +1,12 @@
 // import Swiper from 'swiper'
 import '../stylesheet/main.scss'
-import  { NavSwiper, bestSwiper} from './nav.js';
+import  { NavSwiper, bestSwiper, delSwiper} from './nav.js';
 
-const tabContentItems = document.querySelectorAll('.tab-content-item');
-const tabItems = document.querySelectorAll('.tab-item');
+const tabItems = document.querySelectorAll('.tabs__inner .brand');
+const tabContentItems = document.querySelectorAll('.tab-content .offer__list');
 
-function selectItem() {
+function selectItem(e) {
   removeShow();
-
   const tabContentItem = document.querySelector(`#${this.id}-content`);
   tabContentItem.classList.add('show');
 }
@@ -19,7 +18,7 @@ function removeShow() {
 }
 
 tabItems.forEach(item => {
-  item.addEventListener('mouseover', selectItem )
+  item.addEventListener('click', selectItem )
 });
 
 document.querySelectorAll('.rank').forEach((el, i) => {
@@ -30,6 +29,7 @@ const init = () => {
   window.addEventListener('DOMContentLoaded', () => {
     NavSwiper();
     bestSwiper();
+    delSwiper()
   })
 }
 

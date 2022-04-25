@@ -21,3 +21,13 @@ $sprite-url: '~assets/icons/sprite__homemain.svg';
   background-image: url($tab-url);
   border-radius: 10px;
 }
+
+@mixin multi-ellipsis($font-size, $line-height, $lines) {
+  font-size: $font-size;
+  line-height: $line-height;
+  max-height: $line-height * $lines;
+  // overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical; /* autoprefixer: off */
+}

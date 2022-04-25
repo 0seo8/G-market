@@ -47,10 +47,18 @@ const bestSwiper = new Swiper('.best .swiper-container', {
   loop: true,
 
   navigation: {
-    nextEl: '.swiper-next',
-    prevEl: '.swiper-prev',
+    nextEl: '.button__next',
+    prevEl: '.button__prev',
   },
 })
 
+const delSwiper = new Swiper('.delevery__banner .swiper-container', {
+  loop: true,
+  navigation : { 
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+	},
+})
 
-export { NavSwiper, bestSwiper}
+
+export { NavSwiper, bestSwiper, delSwiper}

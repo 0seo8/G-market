@@ -865,7 +865,6 @@
           </a>
         </li>
       </ul>
-
     </div>
     <button type="button" class="button__prev" aria-label="이전 버튼"><span class="sr-only">이전</span></button>
     <button type="button" class="button__next" aria-label="다음 버튼"><span class="sr-only">다음</span></button>
@@ -882,18 +881,20 @@
         <a src="#" class="show-all" aria-label="바로가기 버튼">바로가기</a>
       </div>
       <div class="delevery__banner">
-        <p class="delevery__title">집 앞까지 신선하게 G마켓 당일배송</p>
+        <p class="delevery__title ">집 앞까지 신선하게 G마켓 당일배송</p>
         <!--  G마켓에서 장보기 중 슬라이드 영역 -->
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <a href="#" class="delevery__banner__link">
                 <div class="product__info">
-                  <div class="product-brand-logo__image">
-                    <span class="sr-only">롯데슈퍼프레시</span>
+                  <div class="text">
+                    <div class="product-brand-logo__image logo1">
+                      <span class="brand">롯데슈퍼프레시</span>
+                    </div>
+                    <div class="product__title">달콤하고 시원한<br> 수분 가득한 수박</div>
+                    <div class="prodcut__sub-title">365일 신선배송, 롯데프레시</div>
                   </div>
-                  <div class="product__title">달콤하고 시원한 수분 가득한 수박</div>
-                  <div class="prodcut__sub-title">365일 신선배송, 롯데프레시</div>
                   <div class="product__image">
                     <img src="./images/market2.jpg" alt="달콤하고 시원한 수분 가득한 수박" width="194">
                   </div>
@@ -903,11 +904,13 @@
             <div class="swiper-slide">
               <a href="#" class="delevery__banner__link">
                 <div class="product__info">
-                  <div class="product-brand-logo__image">
-                    <span class="sr-only" lang="en">Homeplus</span>
+                  <div class="text">
+                    <div class="product-brand-logo__image logo2">
+                      <span class="brand" lang="en">Homeplus</span>
+                    </div>
+                    <div class="product__title">물가안정 프로젝트 <br>국내산 신선특란</div>
+                    <div class="prodcut__sub-title">맛있는 마트,홈플러스</div>
                   </div>
-                  <div class="product__title">물가안정 프로젝트 국내산 신선특란</div>
-                  <div class="prodcut__sub-title">맛있는 마트,홈플러스</div>
                   <div class="product__image">
                     <img src="./images/market3.jpg" alt="물가안정 프로젝트 국내산 신선특란" width="194">
                   </div>
@@ -917,11 +920,13 @@
             <div class="swiper-slide">
               <a href="#" class="delevery__banner__link">
                 <div class="product__info">
-                  <div class="product-brand-logo__image">
-                    <span class="sr-only" lang="en">GS Fresh Mall</span>
+                  <div class="text">
+                    <div class="product-brand-logo__image logo3">
+                      <span class="brand" lang="en">GS Fresh Mall</span>
+                    </div>
+                    <div class="product__title">이런 할인 봄? <br>15%쿠폰 혜택</div>
+                    <div class="prodcut__sub-title">신선함의 시작, GS프레시</div>
                   </div>
-                  <div class="product__title">이런 할인 봄? 15%쿠폰 혜택</div>
-                  <div class="prodcut__sub-title">신선함의 시작, GS프레시</div>
                   <div class="product__image">
                     <img src="./images/market3.jpg" alt="밥값 하는 쌀" width="194">
                   </div>
@@ -931,11 +936,13 @@
             <div class="swiper-slide">
               <a href="#" class="delevery__banner__link">
                 <div class="product__info">
-                  <div class="product-brand-logo__image">
-                    <span class="sr-only" lang="en">LOTTE Mart</span>
+                  <div class="text">
+                    <div class="product-brand-logo__image logo4">
+                      <span class="brand" lang="en">LOTTE Mart</span>
+                    </div>
+                    <div class="product__title">달콤하고 시원한 맛 <br>당도선별 성주참외</div>
+                    <div class="prodcut__sub-title">문 앞까지 안심배송, 롯데마트</div>
                   </div>
-                  <div class="product__title">달콤하고 시원한 맛 당도선별 성주참외</div>
-                  <div class="prodcut__sub-title">문 앞까지 안심배송, 롯데마트</div>
                   <div class="product__image">
                     <img src="./images/market1.jpg" alt="달콤하고 시원한 맛 당도선별 성주참외" width="194">
                   </div>
@@ -943,46 +950,45 @@
               </a>
             </div>
           </div>
-          <button type="button" class="button__prev" aria-label="이전 버튼"><span class="sr-only">이전</span></button>
-          <button type="button" class="button__next" aria-label="다음 버튼"><span class="sr-only">다음</span></button>
+          <div class="swiper-button-next" aria-label="이전 버튼"></div>
+          <div class="swiper-button-prev" aria-label="다음 버튼"></div>
         </div>
       </div>
 
       <div class="tabs">
         <div class="tabs__inner">
           <div id="tab-1" class="brand">
-            <div class="product-brand-logo__image">
-              <span class="sr-only">롯데슈퍼프레시</span>
-            </div>
+            <span class="logo-text">롯데슈퍼프레시</span>
           </div>
+          <div class="divider">|</div>
           <div id="tab-2" class="brand">
-            <div class="product-brand-logo__image">
-              <span class="sr-only" lang="en">Homeplus</span>
-            </div>
+            <span class="logo-text">Homeplus</span>
           </div>
+          <div class="divider">|</div>
           <div id="tab-3" class="brand">
-            <div class="product-brand-logo__image">
-              <span class="sr-only" lang="en">GS Fresh Mall</span>
-            </div>
+            <span class="logo-text">GS Fresh Mall</span>
           </div>
+          <div class="divider">|</div>
           <div id="tab-4" class="brand">
-            <div class="product-brand-logo__image">
-              <span class="sr-only" lang="en">LOTTE Mart</span>
-            </div>
+            <span class="logo-text">LOTTE Mart</span>
           </div>
         </div>
+      </div>
 
-
-        <div class="tab-content">
-          <!-- Tab1 -->
-          <ul id="tab-1-content" class="offer__list show">
-
+      <div class="tab-content">
+        <!-- Tab1 -->
+        <ul id="tab-1-content" class="offer__list show">
+          <div class="tab-content-wrapper">
             <li class="offer__item">
               <a href="/" class="offer__link">
                 <div class="product__image">
                   <img src="./images/lotte1.jpeg" alt="농심 올리브 짜파게티" width="100" />
                 </div>
                 <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type1">전단상품</span>
+                  </div>
                   <div class="product__desc">
                     <span class="sr-only">상품 설명</span>
                     <p class="desc__text">농심 올리브 짜파게티 140G 5입</p>
@@ -990,10 +996,6 @@
                   <div class="product__price">
                     <span class="sr-only">판매가</span>
                     <em class="price" role="text">3,880 <span class="currencyUnit">원</span></em>
-                  </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type1">전단상품</span>
                   </div>
                 </div>
               </a>
@@ -1004,6 +1006,10 @@
                   <img src="./images/lotte2.jpeg" alt="롯데 의성마늘비엔나 160G 2" width="100" />
                 </div>
                 <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type1">전단상품</span>
+                  </div>
                   <div class="product__desc">
                     <span class="sr-only">상품 설명</span>
                     <p class="desc__text">롯데 의성마늘비엔나 160G 2</p>
@@ -1012,10 +1018,7 @@
                     <span class="sr-only">판매가</span>
                     <em class="price" role="text">3,990 <span class="currencyUnit">원</span></em>
                   </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type1">전단상품</span>
-                  </div>
+  
                 </div>
               </a>
             </li>
@@ -1025,6 +1028,10 @@
                   <img src="./images/lotte3.jpeg" alt="제주 삼다수 2L 6입" width="100" />
                 </div>
                 <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type2">행사상품</span>
+                  </div>
                   <div class="product__desc">
                     <span class="sr-only">상품 설명</span>
                     <p class="desc__text">제주 삼다수 2L 6입</p>
@@ -1033,10 +1040,7 @@
                     <span class="sr-only">판매가</span>
                     <em class="price" role="text">6,240 <span class="currencyUnit">원</span></em>
                   </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type2">행사상품</span>
-                  </div>
+  
                 </div>
               </a>
             </li>
@@ -1046,6 +1050,10 @@
                   <img src="./images/lotte4.jpeg" alt="강원오대쌀20KG/포" width="100" />
                 </div>
                 <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type2">행사상품</span>
+                  </div>
                   <div class="product__desc">
                     <span class="sr-only">상품 설명</span>
                     <p class="desc__text">강원오대쌀20KG/포</p>
@@ -1054,10 +1062,7 @@
                     <span class="sr-only">판매가</span>
                     <em class="price" role="text">45,410 <span class="currencyUnit">원</span></em>
                   </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type2">행사상품</span>
-                  </div>
+  
                 </div>
               </a>
             </li>
@@ -1067,6 +1072,10 @@
                   <img src="./images/lotte5.jpeg" alt="빙그레)샤인머스캣85G 4" width="100" />
                 </div>
                 <div class="product__detail">
+                  <div class="product__type">
+                    <span class="sr-only">상품유형</span>
+                    <span class="type type3">균일가</span>
+                  </div>
                   <div class="product__desc">
                     <span class="sr-only">상품 설명</span>
                     <p class="desc__text">빙그레)샤인머스캣85G 4</p>
@@ -1075,10 +1084,7 @@
                     <span class="sr-only">판매가</span>
                     <em class="price" role="text">1,490 <span class="currencyUnit">원</span></em>
                   </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type3">균일가</span>
-                  </div>
+  
                 </div>
               </a>
             </li>
@@ -1088,158 +1094,12 @@
                   <img src="./images/lotte6.jpeg" alt="팔도 비빔면 130G 4입" width="100" />
                 </div>
                 <div class="product__detail">
-                  <div class="product__desc">
-                    <span class="sr-only">상품 설명</span>
-                    <p class="desc__text">팔도 비빔면 130G 4입</p>
-                  </div>
-                  <div class="product__price">
-                    <span class="sr-only">판매가</span>
-                    <em class="price" role="text">2,980 <span class="currencyUnit">원</span></em>
-                  </div>
                   <div class="product__type">
                     <span class="sr-only">상품유형</span>
                     <span class="type type3">균일가</span>
                   </div>
-                </div>
-              </a>
-            </li>
-            <li class="offer__item">
-              <a href="/" class="offer__link">
-                <div class="product__image">
-                  <img src="./images/lotte1.jpeg" alt="농심 올리브 짜파게티" width="100" />
-                </div>
-                <div class="product__detail">
                   <div class="product__desc">
-                    <span class="sr-only">상품 설명</span>
-                    <p class="desc__text">농심 올리브 짜파게티 140G 5입</p>
-                  </div>
-                  <div class="product__price">
-                    <span class="sr-only">판매가</span>
-                    <em class="price" role="text">3,880 <span class="currencyUnit">원</span></em>
-                  </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type1">전단상품</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
-
-          <!-- Tab2 -->
-          <ul id="tab-2-content" class="offer__list">
-            <li class="offer__item">
-              <a href="/" class="offer__link">
-                <div class="product__image">
-                  <img src="./images/homplus1.jpeg" alt="농심 올리브 짜파게티" width="100" />
-                </div>
-                <div class="product__detail">
-                  <div class="product__desc">
-                    <span class="sr-only">상품 설명</span>
-                    <p class="desc__text">농심 올리브 짜파게티 140G 5입</p>
-                  </div>
-                  <div class="product__price">
-                    <span class="sr-only">판매가</span>
-                    <em class="price" role="text">3,880 <span class="currencyUnit">원</span></em>
-                  </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type1">전단상품</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="offer__item">
-              <a href="/" class="offer__link">
-                <div class="product__image">
-                  <img src="./images/homplus2.jpeg" alt="롯데 의성마늘비엔나 160G 2" width="100" />
-                </div>
-                <div class="product__detail">
-                  <div class="product__desc">
-                    <span class="sr-only">상품 설명</span>
-                    <p class="desc__text">롯데 의성마늘비엔나 160G 2</p>
-                  </div>
-                  <div class="product__price">
-                    <span class="sr-only">판매가</span>
-                    <em class="price" role="text">3,990 <span class="currencyUnit">원</span></em>
-                  </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type1">전단상품</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="offer__item">
-              <a href="/" class="offer__link">
-                <div class="product__image">
-                  <img src="./images/homplus3.jpeg" alt="제주 삼다수 2L 6입" width="100" />
-                </div>
-                <div class="product__detail">
-                  <div class="product__desc">
-                    <span class="sr-only">상품 설명</span>
-                    <p class="desc__text">제주 삼다수 2L 6입</p>
-                  </div>
-                  <div class="product__price">
-                    <span class="sr-only">판매가</span>
-                    <em class="price" role="text">6,240 <span class="currencyUnit">원</span></em>
-                  </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type2">행사상품</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="offer__item">
-              <a href="/" class="offer__link">
-                <div class="product__image">
-                  <img src="./images/homplus4.jpeg" alt="강원오대쌀20KG/포" width="100" />
-                </div>
-                <div class="product__detail">
-                  <div class="product__desc">
-                    <span class="sr-only">상품 설명</span>
-                    <p class="desc__text">강원오대쌀20KG/포</p>
-                  </div>
-                  <div class="product__price">
-                    <span class="sr-only">판매가</span>
-                    <em class="price" role="text">45,410 <span class="currencyUnit">원</span></em>
-                  </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type2">행사상품</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="offer__item">
-              <a href="/" class="offer__link">
-                <div class="product__image">
-                  <img src="./images/homplus5.jpeg" alt="빙그레)샤인머스캣85G 4" width="100" />
-                </div>
-                <div class="product__detail">
-                  <div class="product__desc">
-                    <span class="sr-only">상품 설명</span>
-                    <p class="desc__text">빙그레)샤인머스캣85G 4</p>
-                  </div>
-                  <div class="product__price">
-                    <span class="sr-only">판매가</span>
-                    <em class="price" role="text">1,490 <span class="currencyUnit">원</span></em>
-                  </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type4">1+1</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="offer__item">
-              <a href="/" class="offer__link">
-                <div class="product__image">
-                  <img src="./images/homplus6.jpeg" alt="팔도 비빔면 130G 4입" width="100" />
-                </div>
-                <div class="product__detail">
-                  <div class="product__desc">
+              
                     <span class="sr-only">상품 설명</span>
                     <p class="desc__text">팔도 비빔면 130G 4입</p>
                   </div>
@@ -1247,299 +1107,408 @@
                     <span class="sr-only">판매가</span>
                     <em class="price" role="text">2,980 <span class="currencyUnit">원</span></em>
                   </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type4">1+1</span>
-                  </div>
+  
                 </div>
               </a>
-            </li>
-          </ul>
+            </li>  
+          </div>
+        </ul>
 
-          <!-- Tab3 -->
-          <ul id="tab-3-content" class="offer__list">
+        <!-- Tab2 -->
+        <ul id="tab-2-content" class="offer__list">
+          <li class="offer__item">
+            <a href="/" class="offer__link">
+              <div class="product__image">
+                <img src="./images/homplus1.jpeg" alt="농심 올리브 짜파게티" width="100" />
+              </div>
+              <div class="product__detail">
+                <div class="product__type">
+                  <span class="sr-only">상품유형</span>
+                  <span class="type type1">전단상품</span>
+                </div>
+                <div class="product__desc">
+                  <span class="sr-only">상품 설명</span>
+                  <p class="desc__text">농심 올리브 짜파게티 140G 5입</p>
+                </div>
+                <div class="product__price">
+                  <span class="sr-only">판매가</span>
+                  <em class="price" role="text">3,880 <span class="currencyUnit">원</span></em>
+                </div>
 
-            <li class="offer__item">
-              <a href="/" class="offer__link">
-                <div class="product__image">
-                  <img src="./images/lotte1.jpeg" alt="농심 올리브 짜파게티" width="100" />
+              </div>
+            </a>
+          </li>
+          <li class="offer__item">
+            <a href="/" class="offer__link">
+              <div class="product__image">
+                <img src="./images/homplus2.jpeg" alt="롯데 의성마늘비엔나 160G 2" width="100" />
+              </div>
+              <div class="product__detail">
+                <div class="product__type">
+                  <span class="sr-only">상품유형</span>
+                  <span class="type type1">전단상품</span>
                 </div>
-                <div class="product__detail">
-                  <div class="product__desc">
-                    <span class="sr-only">상품 설명</span>
-                    <p class="desc__text">농심 올리브 짜파게티 140G 5입</p>
-                  </div>
-                  <div class="product__price">
-                    <span class="sr-only">판매가</span>
-                    <em class="price" role="text">3,880 <span class="currencyUnit">원</span></em>
-                  </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type1">전단상품</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="offer__item">
-              <a href="/" class="offer__link">
-                <div class="product__image">
-                  <img src="./images/lotte2.jpeg" alt="롯데 의성마늘비엔나 160G 2" width="100" />
-                </div>
-                <div class="product__detail">
-                  <div class="product__desc">
-                    <span class="sr-only">상품 설명</span>
-                    <p class="desc__text">롯데 의성마늘비엔나 160G 2</p>
-                  </div>
-                  <div class="product__price">
-                    <span class="sr-only">판매가</span>
-                    <em class="price" role="text">3,990 <span class="currencyUnit">원</span></em>
-                  </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type1">전단상품</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="offer__item">
-              <a href="/" class="offer__link">
-                <div class="product__image">
-                  <img src="./images/lotte3.jpeg" alt="제주 삼다수 2L 6입" width="100" />
-                </div>
-                <div class="product__detail">
-                  <div class="product__desc">
-                    <span class="sr-only">상품 설명</span>
-                    <p class="desc__text">제주 삼다수 2L 6입</p>
-                  </div>
-                  <div class="product__price">
-                    <span class="sr-only">판매가</span>
-                    <em class="price" role="text">6,240 <span class="currencyUnit">원</span></em>
-                  </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type2">행사상품</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="offer__item">
-              <a href="/" class="offer__link">
-                <div class="product__image">
-                  <img src="./images/lotte4.jpeg" alt="강원오대쌀20KG/포" width="100" />
-                </div>
-                <div class="product__detail">
-                  <div class="product__desc">
-                    <span class="sr-only">상품 설명</span>
-                    <p class="desc__text">강원오대쌀20KG/포</p>
-                  </div>
-                  <div class="product__price">
-                    <span class="sr-only">판매가</span>
-                    <em class="price" role="text">45,410 <span class="currencyUnit">원</span></em>
-                  </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type2">행사상품</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="offer__item">
-              <a href="/" class="offer__link">
-                <div class="product__image">
-                  <img src="./images/lotte5.jpeg" alt="빙그레)샤인머스캣85G 4" width="100" />
-                </div>
-                <div class="product__detail">
-                  <div class="product__desc">
-                    <span class="sr-only">상품 설명</span>
-                    <p class="desc__text">빙그레)샤인머스캣85G 4</p>
-                  </div>
-                  <div class="product__price">
-                    <span class="sr-only">판매가</span>
-                    <em class="price" role="text">1,490 <span class="currencyUnit">원</span></em>
-                  </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type3">균일가</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="offer__item">
-              <a href="/" class="offer__link">
-                <div class="product__image">
-                  <img src="./images/lotte6.jpeg" alt="팔도 비빔면 130G 4입" width="100" />
-                </div>
-                <div class="product__detail">
-                  <div class="product__desc">
-                    <span class="sr-only">상품 설명</span>
-                    <p class="desc__text">팔도 비빔면 130G 4입</p>
-                  </div>
-                  <div class="product__price">
-                    <span class="sr-only">판매가</span>
-                    <em class="price" role="text">2,980 <span class="currencyUnit">원</span></em>
-                  </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type3">균일가</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="offer__item">
-              <a href="/" class="offer__link">
-                <div class="product__image">
-                  <img src="./images/lotte1.jpeg" alt="농심 올리브 짜파게티" width="100" />
-                </div>
-                <div class="product__detail">
-                  <div class="product__desc">
-                    <span class="sr-only">상품 설명</span>
-                    <p class="desc__text">농심 올리브 짜파게티 140G 5입</p>
-                  </div>
-                  <div class="product__price">
-                    <span class="sr-only">판매가</span>
-                    <em class="price" role="text">3,880 <span class="currencyUnit">원</span></em>
-                  </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type1">전단상품</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
 
-          <!-- Tab4 -->
-          <ul id="tab-4-content" class="offer__list">
-            <li class="offer__item">
-              <a href="/" class="offer__link">
-                <div class="product__image">
-                  <img src="./images/homplus1.jpeg" alt="농심 올리브 짜파게티" width="100" />
+                <div class="product__desc">
+                  <span class="sr-only">상품 설명</span>
+                  <p class="desc__text">롯데 의성마늘비엔나 160G 2</p>
                 </div>
-                <div class="product__detail">
-                  <div class="product__desc">
-                    <span class="sr-only">상품 설명</span>
-                    <p class="desc__text">농심 올리브 짜파게티 140G 5입</p>
-                  </div>
-                  <div class="product__price">
-                    <span class="sr-only">판매가</span>
-                    <em class="price" role="text">3,880 <span class="currencyUnit">원</span></em>
-                  </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type1">전단상품</span>
-                  </div>
+                <div class="product__price">
+                  <span class="sr-only">판매가</span>
+                  <em class="price" role="text">3,990 <span class="currencyUnit">원</span></em>
                 </div>
-              </a>
-            </li>
-            <li class="offer__item">
-              <a href="/" class="offer__link">
-                <div class="product__image">
-                  <img src="./images/homplus2.jpeg" alt="롯데 의성마늘비엔나 160G 2" width="100" />
+              </div>
+            </a>
+          </li>
+          <li class="offer__item">
+            <a href="/" class="offer__link">
+              <div class="product__image">
+                <img src="./images/homplus3.jpeg" alt="제주 삼다수 2L 6입" width="100" />
+              </div>
+              <div class="product__detail">
+                <div class="product__desc">
+                  <span class="sr-only">상품 설명</span>
+                  <p class="desc__text">제주 삼다수 2L 6입</p>
                 </div>
-                <div class="product__detail">
-                  <div class="product__desc">
-                    <span class="sr-only">상품 설명</span>
-                    <p class="desc__text">롯데 의성마늘비엔나 160G 2</p>
-                  </div>
-                  <div class="product__price">
-                    <span class="sr-only">판매가</span>
-                    <em class="price" role="text">3,990 <span class="currencyUnit">원</span></em>
-                  </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type1">전단상품</span>
-                  </div>
+                <div class="product__price">
+                  <span class="sr-only">판매가</span>
+                  <em class="price" role="text">6,240 <span class="currencyUnit">원</span></em>
                 </div>
-              </a>
-            </li>
-            <li class="offer__item">
-              <a href="/" class="offer__link">
-                <div class="product__image">
-                  <img src="./images/homplus3.jpeg" alt="제주 삼다수 2L 6입" width="100" />
+                <div class="product__type">
+                  <span class="sr-only">상품유형</span>
+                  <span class="type type2">행사상품</span>
                 </div>
-                <div class="product__detail">
-                  <div class="product__desc">
-                    <span class="sr-only">상품 설명</span>
-                    <p class="desc__text">제주 삼다수 2L 6입</p>
-                  </div>
-                  <div class="product__price">
-                    <span class="sr-only">판매가</span>
-                    <em class="price" role="text">6,240 <span class="currencyUnit">원</span></em>
-                  </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type2">행사상품</span>
-                  </div>
+              </div>
+            </a>
+          </li>
+          <li class="offer__item">
+            <a href="/" class="offer__link">
+              <div class="product__image">
+                <img src="./images/homplus4.jpeg" alt="강원오대쌀20KG/포" width="100" />
+              </div>
+              <div class="product__detail">
+                <div class="product__desc">
+                  <span class="sr-only">상품 설명</span>
+                  <p class="desc__text">강원오대쌀20KG/포</p>
                 </div>
-              </a>
-            </li>
-            <li class="offer__item">
-              <a href="/" class="offer__link">
-                <div class="product__image">
-                  <img src="./images/homplus4.jpeg" alt="강원오대쌀20KG/포" width="100" />
+                <div class="product__price">
+                  <span class="sr-only">판매가</span>
+                  <em class="price" role="text">45,410 <span class="currencyUnit">원</span></em>
                 </div>
-                <div class="product__detail">
-                  <div class="product__desc">
-                    <span class="sr-only">상품 설명</span>
-                    <p class="desc__text">강원오대쌀20KG/포</p>
-                  </div>
-                  <div class="product__price">
-                    <span class="sr-only">판매가</span>
-                    <em class="price" role="text">45,410 <span class="currencyUnit">원</span></em>
-                  </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type2">행사상품</span>
-                  </div>
+                <div class="product__type">
+                  <span class="sr-only">상품유형</span>
+                  <span class="type type2">행사상품</span>
                 </div>
-              </a>
-            </li>
-            <li class="offer__item">
-              <a href="/" class="offer__link">
-                <div class="product__image">
-                  <img src="./images/homplus5.jpeg" alt="빙그레)샤인머스캣85G 4" width="100" />
+              </div>
+            </a>
+          </li>
+          <li class="offer__item">
+            <a href="/" class="offer__link">
+              <div class="product__image">
+                <img src="./images/homplus5.jpeg" alt="빙그레)샤인머스캣85G 4" width="100" />
+              </div>
+              <div class="product__detail">
+                <div class="product__desc">
+                  <span class="sr-only">상품 설명</span>
+                  <p class="desc__text">빙그레)샤인머스캣85G 4</p>
                 </div>
-                <div class="product__detail">
-                  <div class="product__desc">
-                    <span class="sr-only">상품 설명</span>
-                    <p class="desc__text">빙그레)샤인머스캣85G 4</p>
-                  </div>
-                  <div class="product__price">
-                    <span class="sr-only">판매가</span>
-                    <em class="price" role="text">1,490 <span class="currencyUnit">원</span></em>
-                  </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type4">1+1</span>
-                  </div>
+                <div class="product__price">
+                  <span class="sr-only">판매가</span>
+                  <em class="price" role="text">1,490 <span class="currencyUnit">원</span></em>
                 </div>
-              </a>
-            </li>
-            <li class="offer__item">
-              <a href="/" class="offer__link">
-                <div class="product__image">
-                  <img src="./images/homplus6.jpeg" alt="팔도 비빔면 130G 4입" width="100" />
+                <div class="product__type">
+                  <span class="sr-only">상품유형</span>
+                  <span class="type type4">1+1</span>
                 </div>
-                <div class="product__detail">
-                  <div class="product__desc">
-                    <span class="sr-only">상품 설명</span>
-                    <p class="desc__text">팔도 비빔면 130G 4입</p>
-                  </div>
-                  <div class="product__price">
-                    <span class="sr-only">판매가</span>
-                    <em class="price" role="text">2,980 <span class="currencyUnit">원</span></em>
-                  </div>
-                  <div class="product__type">
-                    <span class="sr-only">상품유형</span>
-                    <span class="type type4">1+1</span>
-                  </div>
+              </div>
+            </a>
+          </li>
+          <li class="offer__item">
+            <a href="/" class="offer__link">
+              <div class="product__image">
+                <img src="./images/homplus6.jpeg" alt="팔도 비빔면 130G 4입" width="100" />
+              </div>
+              <div class="product__detail">
+                <div class="product__desc">
+                  <span class="sr-only">상품 설명</span>
+                  <p class="desc__text">팔도 비빔면 130G 4입</p>
                 </div>
-              </a>
-            </li>
-          </ul>
-        </div>
+                <div class="product__price">
+                  <span class="sr-only">판매가</span>
+                  <em class="price" role="text">2,980 <span class="currencyUnit">원</span></em>
+                </div>
+                <div class="product__type">
+                  <span class="sr-only">상품유형</span>
+                  <span class="type type4">1+1</span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
 
-        <a href="#" id="gotoLink" class="goto-product__link">무료배송 상품 더보기 <span class="goto"> </span></a>
+        <!-- Tab3 -->
+        <ul id="tab-3-content" class="offer__list">
+
+          <li class="offer__item">
+            <a href="/" class="offer__link">
+              <div class="product__image">
+                <img src="./images/lotte1.jpeg" alt="농심 올리브 짜파게티" width="100" />
+              </div>
+              <div class="product__detail">
+                <div class="product__desc">
+                  <span class="sr-only">상품 설명</span>
+                  <p class="desc__text">농심 올리브 짜파게티 140G 5입</p>
+                </div>
+                <div class="product__price">
+                  <span class="sr-only">판매가</span>
+                  <em class="price" role="text">3,880 <span class="currencyUnit">원</span></em>
+                </div>
+                <div class="product__type">
+                  <span class="sr-only">상품유형</span>
+                  <span class="type type1">전단상품</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="offer__item">
+            <a href="/" class="offer__link">
+              <div class="product__image">
+                <img src="./images/lotte2.jpeg" alt="롯데 의성마늘비엔나 160G 2" width="100" />
+              </div>
+              <div class="product__detail">
+                <div class="product__desc">
+                  <span class="sr-only">상품 설명</span>
+                  <p class="desc__text">롯데 의성마늘비엔나 160G 2</p>
+                </div>
+                <div class="product__price">
+                  <span class="sr-only">판매가</span>
+                  <em class="price" role="text">3,990 <span class="currencyUnit">원</span></em>
+                </div>
+                <div class="product__type">
+                  <span class="sr-only">상품유형</span>
+                  <span class="type type1">전단상품</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="offer__item">
+            <a href="/" class="offer__link">
+              <div class="product__image">
+                <img src="./images/lotte3.jpeg" alt="제주 삼다수 2L 6입" width="100" />
+              </div>
+              <div class="product__detail">
+                <div class="product__desc">
+                  <span class="sr-only">상품 설명</span>
+                  <p class="desc__text">제주 삼다수 2L 6입</p>
+                </div>
+                <div class="product__price">
+                  <span class="sr-only">판매가</span>
+                  <em class="price" role="text">6,240 <span class="currencyUnit">원</span></em>
+                </div>
+                <div class="product__type">
+                  <span class="sr-only">상품유형</span>
+                  <span class="type type2">행사상품</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="offer__item">
+            <a href="/" class="offer__link">
+              <div class="product__image">
+                <img src="./images/lotte4.jpeg" alt="강원오대쌀20KG/포" width="100" />
+              </div>
+              <div class="product__detail">
+                <div class="product__desc">
+                  <span class="sr-only">상품 설명</span>
+                  <p class="desc__text">강원오대쌀20KG/포</p>
+                </div>
+                <div class="product__price">
+                  <span class="sr-only">판매가</span>
+                  <em class="price" role="text">45,410 <span class="currencyUnit">원</span></em>
+                </div>
+                <div class="product__type">
+                  <span class="sr-only">상품유형</span>
+                  <span class="type type2">행사상품</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="offer__item">
+            <a href="/" class="offer__link">
+              <div class="product__image">
+                <img src="./images/lotte5.jpeg" alt="빙그레)샤인머스캣85G 4" width="100" />
+              </div>
+              <div class="product__detail">
+                <div class="product__desc">
+                  <span class="sr-only">상품 설명</span>
+                  <p class="desc__text">빙그레)샤인머스캣85G 4</p>
+                </div>
+                <div class="product__price">
+                  <span class="sr-only">판매가</span>
+                  <em class="price" role="text">1,490 <span class="currencyUnit">원</span></em>
+                </div>
+                <div class="product__type">
+                  <span class="sr-only">상품유형</span>
+                  <span class="type type3">균일가</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="offer__item">
+            <a href="/" class="offer__link">
+              <div class="product__image">
+                <img src="./images/lotte6.jpeg" alt="팔도 비빔면 130G 4입" width="100" />
+              </div>
+              <div class="product__detail">
+                <div class="product__desc">
+                  <span class="sr-only">상품 설명</span>
+                  <p class="desc__text">팔도 비빔면 130G 4입</p>
+                </div>
+                <div class="product__price">
+                  <span class="sr-only">판매가</span>
+                  <em class="price" role="text">2,980 <span class="currencyUnit">원</span></em>
+                </div>
+                <div class="product__type">
+                  <span class="sr-only">상품유형</span>
+                  <span class="type type3">균일가</span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Tab4 -->
+        <ul id="tab-4-content" class="offer__list">
+          <li class="offer__item">
+            <a href="/" class="offer__link">
+              <div class="product__image">
+                <img src="./images/homplus1.jpeg" alt="농심 올리브 짜파게티" width="100" />
+              </div>
+              <div class="product__detail">
+                <div class="product__desc">
+                  <span class="sr-only">상품 설명</span>
+                  <p class="desc__text">농심 올리브 짜파게티 140G 5입</p>
+                </div>
+                <div class="product__price">
+                  <span class="sr-only">판매가</span>
+                  <em class="price" role="text">3,880 <span class="currencyUnit">원</span></em>
+                </div>
+                <div class="product__type">
+                  <span class="sr-only">상품유형</span>
+                  <span class="type type1">전단상품</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="offer__item">
+            <a href="/" class="offer__link">
+              <div class="product__image">
+                <img src="./images/homplus2.jpeg" alt="롯데 의성마늘비엔나 160G 2" width="100" />
+              </div>
+              <div class="product__detail">
+                <div class="product__desc">
+                  <span class="sr-only">상품 설명</span>
+                  <p class="desc__text">롯데 의성마늘비엔나 160G 2</p>
+                </div>
+                <div class="product__price">
+                  <span class="sr-only">판매가</span>
+                  <em class="price" role="text">3,990 <span class="currencyUnit">원</span></em>
+                </div>
+                <div class="product__type">
+                  <span class="sr-only">상품유형</span>
+                  <span class="type type1">전단상품</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="offer__item">
+            <a href="/" class="offer__link">
+              <div class="product__image">
+                <img src="./images/homplus3.jpeg" alt="제주 삼다수 2L 6입" width="100" />
+              </div>
+              <div class="product__detail">
+                <div class="product__desc">
+                  <span class="sr-only">상품 설명</span>
+                  <p class="desc__text">제주 삼다수 2L 6입</p>
+                </div>
+                <div class="product__price">
+                  <span class="sr-only">판매가</span>
+                  <em class="price" role="text">6,240 <span class="currencyUnit">원</span></em>
+                </div>
+                <div class="product__type">
+                  <span class="sr-only">상품유형</span>
+                  <span class="type type2">행사상품</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="offer__item">
+            <a href="/" class="offer__link">
+              <div class="product__image">
+                <img src="./images/homplus4.jpeg" alt="강원오대쌀20KG/포" width="100" />
+              </div>
+              <div class="product__detail">
+                <div class="product__desc">
+                  <span class="sr-only">상품 설명</span>
+                  <p class="desc__text">강원오대쌀20KG/포</p>
+                </div>
+                <div class="product__price">
+                  <span class="sr-only">판매가</span>
+                  <em class="price" role="text">45,410 <span class="currencyUnit">원</span></em>
+                </div>
+                <div class="product__type">
+                  <span class="sr-only">상품유형</span>
+                  <span class="type type2">행사상품</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="offer__item">
+            <a href="/" class="offer__link">
+              <div class="product__image">
+                <img src="./images/homplus5.jpeg" alt="빙그레)샤인머스캣85G 4" width="100" />
+              </div>
+              <div class="product__detail">
+                <div class="product__desc">
+                  <span class="sr-only">상품 설명</span>
+                  <p class="desc__text">빙그레)샤인머스캣85G 4</p>
+                </div>
+                <div class="product__price">
+                  <span class="sr-only">판매가</span>
+                  <em class="price" role="text">1,490 <span class="currencyUnit">원</span></em>
+                </div>
+                <div class="product__type">
+                  <span class="sr-only">상품유형</span>
+                  <span class="type type4">1+1</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="offer__item">
+            <a href="/" class="offer__link">
+              <div class="product__image">
+                <img src="./images/homplus6.jpeg" alt="팔도 비빔면 130G 4입" width="100" />
+              </div>
+              <div class="product__detail">
+                <div class="product__desc">
+                  <span class="sr-only">상품 설명</span>
+                  <p class="desc__text">팔도 비빔면 130G 4입</p>
+                </div>
+                <div class="product__price">
+                  <span class="sr-only">판매가</span>
+                  <em class="price" role="text">2,980 <span class="currencyUnit">원</span></em>
+                </div>
+                <div class="product__type">
+                  <span class="sr-only">상품유형</span>
+                  <span class="type type4">1+1</span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <a href="#" id="gotoLink" class="goto-product__link">롯데마트 바로가기 <span class="goto"> </span></a>
 
     </article>
 
@@ -1558,8 +1527,10 @@
             <div class="swiper-slide">
               <a href="#" class="delevery__banner__link">
                 <div class="product__info">
-                  <div class="product__title">스마트배송 매일 15%중복쿠폰</div>
-                  <div class="prodcut__sub-title">스마트클럽이라면 무조건!</div>
+                  <div class="text">
+                    <div class="product__title">스마트배송<br> 매일 15%중복쿠폰</div>
+                    <div class="prodcut__sub-title">스마트클럽이라면 무조건!</div>
+                  </div>
                   <div class="product__image">
                     <img src="./images/smile1.jpg" alt="스마트배송 이달의 할인" width="194">
                   </div>
@@ -1569,8 +1540,10 @@
             <div class="swiper-slide">
               <a href="#" class="delevery__banner__link">
                 <div class="product__info">
-                  <div class="product__title">짜릿한 국민 탄산! 코카콜라</div>
-                  <div class="prodcut__sub-title">스마일배송으로 주문하세요!</div>
+                  <div class="text">
+                    <div class="product__title">짜릿한 국민 탄산! <br>코카콜라</div>
+                    <div class="prodcut__sub-title">스마일배송으로 주문하세요!</div>
+                  </div>
                   <div class="product__image">
                     <img src="./images/smile2.png" alt="코카콜라" width="194">
                   </div>
@@ -1580,8 +1553,10 @@
             <div class="swiper-slide">
               <a href="#" class="delevery__banner__link">
                 <div class="product__info">
-                  <div class="product__title">건강한 생필품 <br> P&G</div>
-                  <div class="prodcut__sub-title">무겁게 들지말고 한 번에 주문!</div>
+                  <div class="text">
+                    <div class="product__title">건강한 생필품 <br> P&G</div>
+                    <div class="prodcut__sub-title">무겁게 들지말고 한 번에 주문!</div>
+                  </div>
                   <div class="product__image">
                     <img src="./images/smile3.png" alt="Dowuny 실내 건조" width="194">
                   </div>
@@ -1591,8 +1566,10 @@
             <div class="swiper-slide">
               <a href="#" class="delevery__banner__link">
                 <div class="product__info">
-                  <div class="product__title">디지털 가전도 역시 스마일배송</div>
-                  <div class="prodcut__sub-title">집에서 편리하게 주문하세요!</div>
+                  <div class="text">
+                    <div class="product__title">디지털 가전도 <br>역시 스마일배송</div>
+                    <div class="prodcut__sub-title">집에서 편리하게 주문하세요!</div>
+                  </div>
                   <div class="product__image">
                     <img src="./images/smile5.png" alt="오븐" width="194">
                   </div>
@@ -1600,8 +1577,8 @@
               </a>
             </div>
           </div>
-          <button type="button" class="button__prev" aria-label="이전 버튼"><span class="sr-only">이전</span></button>
-          <button type="button" class="button__next" aria-label="다음 버튼"><span class="sr-only">다음</span></button>
+          <div class="swiper-button-next" aria-label="이전 버튼"></div>
+          <div class="swiper-button-prev" aria-label="다음 버튼"></div>
         </div>
       </div>
       </div>

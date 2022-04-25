@@ -10,16 +10,13 @@ section.best.inner{
 
 .best {
   margin-top: 5rem;
-  height: 37.8rem;
-
   position: relative;
-  .swiper-container {
-    width: clac(14.4rem * 5);
-    height: 31.6rem;
-    position: absolute;
-    background-color: aliceblue;
-  } 
+  height: 38rem;
 
+  .swiper-container {
+    width: calc(24rem * 5);
+    position: absolute;
+  } 
 }
 
 // 베스트 리스트
@@ -36,11 +33,11 @@ section.best.inner{
 
   .best__item {
     width: 24.4rem;
-    height: 31.4rem;
     padding: 0 1rem;
-
+    height: 31.6rem;
     .best__link {
       display: block;
+    height: 31.6rem;
 
       img {
         width: 22.4rem;
