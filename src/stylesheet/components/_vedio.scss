@@ -1,0 +1,111 @@
+.video {
+  position: relative;
+  height: 48.3rem;
+  padding: 5rem 0 7rem;
+  margin-top: 6rem;
+
+  .video__headline {
+    height: 2.8rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+
+    .title {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .title__link {
+      display: block;
+      width: 7.8rem;
+      height: 2.8rem;
+      margin-left: .3rem;
+      @include sprite-img(0 -122px)
+    }
+  }
+
+  .swiper-container {
+    width: calc(38rem * 3 + 8rem);
+    height: 30rem;
+    position: absolute;
+    overflow: visible;
+    .swiper-slide {
+      position: relative;
+      transition: opacity 1s;
+      width: 38rem;
+      height: 30rem;
+
+      > img {
+        background-color: $booking-color-gray-200;
+        width: 37.9rem;
+      }
+    }
+
+    .swiper-slide-active {
+      opacity: 1;
+    }
+
+  }
+
+  .detail {
+    margin-left: 1rem;
+    width: 30rem;
+    padding-left: 1rem;
+    .desc {
+      display: inline-block;
+      padding-right: 3rem;
+      height: 3.8rem;
+      margin: .6rem 0 2rem;
+      font-size: 1.9rem;
+      color: $booking-color-black-400;
+      line-height: 2.6rem;
+    }
+    .product__price {
+      font-family: sans-serif;
+      font-size: 1.6rem;
+      display: inline-block;
+      .price {
+        font-weight: bold;
+        font-size: 1.9rem;
+        font-style: normal;
+      }
+      .currencyUnit {
+        font-weight: 400;
+        font-size: 1.6rem;
+      }
+    }
+    .logo {
+      position: absolute;
+      bottom: 1rem;
+      right: 4rem;
+      img {
+        width: 6rem;
+        margin-bottom: .5rem;
+      }
+      .product__caption {
+        text-align : center;
+      }
+    }
+  }
+  .box__dimmed-right,
+  .box__dimmed-left {
+    content: '';
+    position: absolute;
+    width: 500rem;
+    height: 40rem;
+    top: 0;
+    z-index: 20;
+    background-color: rgba($booking-color-white, 0.7);
+  }
+  
+  .box__dimmed-left {
+    left: -500rem;
+  }
+  
+  .box__dimmed-right {
+    right: -500rem;
+  }
+}
+
+

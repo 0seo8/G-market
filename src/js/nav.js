@@ -60,5 +60,18 @@ const delSwiper = new Swiper('.delevery__banner .swiper-container', {
 	},
 })
 
+const serSwiper = new Swiper('.video .swiper-container', {
+  autoplay: { 
+    delay: 4000
+  },
+  slidesPerView: 3, 
+  centeredSlides: true, 
+  loop: true, 
+  navigation: {
+    nextEl: '.button__next',
+    prevEl: '.button__prev',
+  },
+})
 
-export { NavSwiper, bestSwiper, delSwiper}
+
+export { NavSwiper, bestSwiper, delSwiper, serSwiper}

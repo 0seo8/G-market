@@ -1,8 +1,7 @@
 // import Swiper from 'swiper'
 import '../stylesheet/main.scss'
-import  { NavSwiper, bestSwiper, delSwiper} from './nav.js';
+import  { NavSwiper, bestSwiper, delSwiper, serSwiper} from './nav.js';
 import {Wrapper} from './tablist.js'
-
 
 
 Wrapper('delivery__Gmarket')
@@ -16,7 +15,8 @@ const init = () => {
   window.addEventListener('DOMContentLoaded', () => {
     NavSwiper();
     bestSwiper();
-    delSwiper()
+    delSwiper();
+    serSwiper();
   })
 }
 
