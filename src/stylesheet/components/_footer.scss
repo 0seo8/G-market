@@ -1,7 +1,5 @@
-.is--active {
-  .salesService__list {
-    display: flex;
-  }
+.is--active + .salesService__list {
+  display: flex !important;
 }
 
 .footer {
@@ -12,7 +10,7 @@
   font-weight: 300;
 
   // customerGuide
-  .customerGuide{
+  .customerGuide {
     display: flex;
     padding: 1.5rem 0 1.7rem;
     border-bottom: 1px solid $booking-color-gray-300;
@@ -28,7 +26,9 @@
 
   .salesService {
     position: relative;
+
     .salesService__btn {
+      position: relative;
       width: 11.7rem;
       height: 3.4rem;
       border: 1px solid $booking-color-white-600;
@@ -37,7 +37,12 @@
       line-height: 1.4rem;
       color: $booking-color-black-500;
       cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: .5rem;
     }
+
     .salesService__list {
       position: absolute;
       right: 0;
@@ -51,6 +56,7 @@
       gap: 1rem;
       padding-left: 3rem;
       display: none;
+      z-index: 10;
       .salesService__link {
         display: block;
         font-size: 1.4rem;
@@ -73,11 +79,13 @@
       margin: 0;
       font-size: 1.4rem;
     }
+
     .Information__item {
       font-size: 1.3rem;
       color: $booking-color-white-800;
       letter-spacing: -.5px;
       margin-top: 1rem;
+
       .button {
         font-size: 1.3rem;
         display: inline-block;
@@ -89,12 +97,14 @@
         border-radius: .3rem;
         vertical-align: middle;
         cursor: pointer;
+
         .button_click {
           display: block;
         }
       }
     }
   }
+
   .divider {
     display: inline-block;
     width: .1rem;
@@ -107,16 +117,20 @@
     font-size: 1.3rem;
     padding-bottom: 1rem;
     color: $booking-color-white-700;
-    .first, .second {
+
+    .first,
+    .second {
       display: flex;
       margin-top: 1rem;
       align-items: cetner;
       gap: 2rem;
     }
+
     .title {
       margin: 0;
       font-size: 1.4rem;
     }
+
     .item__list {
       font-size: 1.3rem;
       color: $booking-color-white-800;
@@ -127,29 +141,36 @@
   .copyrightArea {
     color: $booking-color-white-800;
     margin-top: 1rem;
+
     .copyright {
       display: flex;
       flex-flow: column nowrap;
+
       span {
         margin-top: .5rem;
         display: inline-block;
         font-size: 1.2rem;
       }
     }
+
     .copyright__last {
       margin-top: 1.5rem;
       margin-bottom: 8.5rem;
       height: 19.5rem;
+
       img {
         margin-right: 1rem;
       }
+
       span {
         margin-right: 1rem;
       }
     }
+
     .underline {
       text-decoration: underline;
     }
+
     .before {
       &::after {
         content: '콘텐츠산업 진흥법에 따른 표시';
@@ -162,4 +183,3 @@
 
 
 }
-

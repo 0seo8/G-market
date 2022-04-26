@@ -93,3 +93,7 @@ body{
   color: $booking-color-black-200;
   background:$booking-color-white;
 }
+
+@media (max-width:600px){ 
+  $base-size : 8px;
+}

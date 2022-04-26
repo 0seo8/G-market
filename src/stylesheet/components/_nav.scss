@@ -68,9 +68,6 @@
             font-size: 1.5rem;
             line-height: 4rem;
 
-            &:hover+div {
-              color: red;
-            }
           }
 
           .category__depth2 {
@@ -84,7 +81,7 @@
             border-right: 1px solid $booking-color-gray-100;
             border-top: 1px solid $booking-color-gray-100;
             background-color: $booking-color-white;
-            width: 120rem;
+            width: calc(120rem - 22.4rem);
             display: none;
 
             &.is-active {
