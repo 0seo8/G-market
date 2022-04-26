@@ -16,12 +16,6 @@ $sprite-url: '~assets/icons/sprite__homemain.svg';
   background-position: $sprite-position;
 }
 
-@mixin changStyle($color, $tab-url) {
-  background-color: $color;
-  background-image: url($tab-url);
-  border-radius: 10px;
-}
-
 @mixin multi-ellipsis($font-size, $line-height, $lines) {
   font-size: $font-size;
   line-height: $line-height;

@@ -86,3 +86,23 @@
   height: 1.4rem;
   display: inline-block;
 }
+
+.button__prev {
+  position: absolute;
+  @include sprite-img(0 0);
+  width: 4.2rem;
+  height: 4.2rem;
+  top: 43%;
+  left: -1%;
+  z-index: 10;
+}
+
+.button__next {
+  position: absolute;
+  @include sprite-img(-42px 0);
+  width: 4.2rem;
+  height: 4.2rem;
+  top: 43%;
+  right:0;
+  z-index: 10;
+}
