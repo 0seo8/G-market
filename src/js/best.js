@@ -35,7 +35,7 @@ return bestItem;
 }
 
 
-const renderItem = () => {
+export const renderItem = () => {
   $bestList.innerHTML = ''
   for(let i=0; i<15; i++) {
     const item = createItems(i)

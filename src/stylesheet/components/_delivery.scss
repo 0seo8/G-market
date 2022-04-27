@@ -148,7 +148,7 @@
 					color: $booking-color-red-400;
 				}
 
-				&.hovered {
+				&:hover {
 					color: $booking-color-white !important;
 					background-color: $booking-color-green-400;
 					border-radius: 20px;
@@ -164,7 +164,7 @@
 				color: $booking-color-gray-600;
 				cursor: pointer;
 				
-				&.hovered {
+				&:hover {
 					color: $booking-color-white !important;
 					background-color: $booking-color-blue-300;
 					border-radius: 20px;
