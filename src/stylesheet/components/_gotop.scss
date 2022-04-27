@@ -1,0 +1,16 @@
+#to-top {
+  position: fixed;
+  bottom: 8rem;
+  right: 8rem;
+  width: 8rem;
+  height: 8rem;
+  .to-top-icon {
+    @include sprite-img(0 -324px);
+    background-image: url(~assets/images/sprite__common.png);
+    cursor: pointer;
+    width: 8rem;
+    height: 8rem;
+    display: inline-block;
+    background-size: 400px auto;
+  }
+}

@@ -1,3 +1,5 @@
+
+
 const get = target =>  document.querySelector(target)
 const $bestList = get('.best__list')
 
@@ -32,7 +34,8 @@ bestItem.innerHTML = `
 return bestItem;
 }
 
-renderItem = () => {
+
+const renderItem = () => {
   $bestList.innerHTML = ''
   for(let i=0; i<15; i++) {
     const item = createItems(i)
@@ -40,6 +43,5 @@ renderItem = () => {
   }
 }
 
-renderItem()
 
 
