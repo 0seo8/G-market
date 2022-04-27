@@ -13,12 +13,11 @@ clickBtn()
 
 const init = () => {
   window.addEventListener('DOMContentLoaded', () => {
-    new NavSwiper();
-    new bestSwiper();
-    new delSwiper();
-    new serSwiper();
-    new chaSwiper();
-    onload()
+      NavSwiper();
+      new bestSwiper();
+      delSwiper();
+      serSwiper();
+      chaSwiper();
   })
 
 }

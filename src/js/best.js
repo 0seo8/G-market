@@ -32,12 +32,14 @@ bestItem.innerHTML = `
 return bestItem;
 }
 
-export const renderItem = () => {
+renderItem = () => {
   $bestList.innerHTML = ''
   for(let i=0; i<15; i++) {
     const item = createItems(i)
     $bestList.appendChild(item)
   }
 }
+
+renderItem()
 
 

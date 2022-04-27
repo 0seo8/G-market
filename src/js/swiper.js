@@ -13,8 +13,8 @@ let NavSwiper = new Swiper('.promotion .swiper-container', {
   },
 
   navigation: {
-    nextEl: '.promotion .swiper-button-next',
-    prevEl: '.promotion .swiper-button-prev',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
   on: {
     init: function () {
@@ -47,16 +47,16 @@ let bestSwiper = new Swiper('.best .swiper-container', {
   loop: true,
 
   navigation: {
-    nextEl: '.best .button__next',
-    prevEl: '.best .button__prev',
+    nextEl: '.button__next',
+    prevEl: '.button__prev',
   },
 })
 
 let delSwiper = new Swiper('.delevery__banner .swiper-container', {
   loop: true,
   navigation : { 
-    nextEl: '.delevery__banner .swiper-button-next',
-    prevEl: '.delevery__banner .swiper-button-prev',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
 	},
 })
 
@@ -68,8 +68,8 @@ let serSwiper = new Swiper('.video .swiper-container', {
   centeredSlides: true, 
   loop: true, 
   navigation: {
-    nextEl: '.video .button__next',
-    prevEl: '.video .button__prev',
+    nextEl: '.button__next',
+    prevEl: '.button__prev',
   },
 })
 
@@ -82,8 +82,8 @@ let chaSwiper = new Swiper('.chance .swiper-container', {
   centeredSlides: true, 
   loop: true, 
   navigation: {
-    nextEl: '.chance .button__next',
-    prevEl: '.chance .button__prev',
+    nextEl: '.button__next',
+    prevEl: ' .button__prev',
   },
 })
 
