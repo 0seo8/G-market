@@ -1,6 +1,6 @@
 # [G-market](https://www.gmarket.co.kr/) 클론코딩
 
-[▶원본 사이트](https://www.gmarket.co.kr/)
+[▶netlify배포](https://main--cosmic-marzipan-89971b.netlify.app/)
 
 
 [▶netlify배포]
