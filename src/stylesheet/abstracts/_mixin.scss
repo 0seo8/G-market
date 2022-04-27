@@ -1,5 +1,6 @@
 $asset-path: "~assets/font/";
 $sprite-url: '~assets/icons/sprite__homemain.svg';
+
 @mixin font-face($name, $file, $weight: noraml, $style: normal) {
   @font-face {
     font-family: "#{$name}";
@@ -20,7 +21,7 @@ $sprite-url: '~assets/icons/sprite__homemain.svg';
   font-size: $font-size;
   line-height: $line-height;
   max-height: $line-height * $lines;
-  // overflow: hidden;
+  overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: $lines;
   -webkit-box-orient: vertical; /* autoprefixer: off */

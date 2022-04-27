@@ -5,6 +5,7 @@
 body {
   font: 1.6rem/1.15 $font-family;
   letter-spacing: -1px;
+  visibility: visible;
 }
 
 a{
@@ -36,6 +37,10 @@ ul, li {
   list-style: none;
   padding-left: 0;
   margin: 0;
+}
+
+.onload {
+  visibility: hidden;
 }
 
 .preload * {

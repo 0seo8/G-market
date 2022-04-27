@@ -37,7 +37,7 @@ const NavSwiper = new Swiper('.promotion .swiper-container', {
   }
 });
 
-const bestSwiper = new Swiper('.best .swiper-container', {
+let bestSwiper = new Swiper('.best .swiper-container', {
   autoplay: {
     delay: 4000
   },

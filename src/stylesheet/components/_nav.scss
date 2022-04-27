@@ -89,6 +89,7 @@
             background-color: $booking-color-white;
             width: calc(120rem - 22.4rem);
             display: none;
+            z-index: 10;
 
             &.is-active {
               display: block;
@@ -298,4 +299,5 @@
   margin: 0 0 1rem 23rem;
   color: $booking-color-white;
   text-shadow: -1px 1px 3px $booking-color-gray-600;
+  z-index: 5;
 }
