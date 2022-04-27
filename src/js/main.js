@@ -3,8 +3,6 @@ import  { NavSwiper, bestSwiper, delSwiper, serSwiper, chaSwiper} from './swiper
 import {selectTab, clickBtn} from './tablist.js'
 import { renderItem } from './best.js'
 
-const body = document.querySelector('body')
-
 renderItem()
 
 selectTab('delivery__Gmarket')
@@ -12,10 +10,6 @@ selectTab('delivery__smile')
 selectTab('navigation')
 clickBtn()
 
-const onload = () => {
-  body.classList.remove('preload');
-  body.classList.remove('onload');
-}
 
 const init = () => {
   window.addEventListener('DOMContentLoaded', () => {

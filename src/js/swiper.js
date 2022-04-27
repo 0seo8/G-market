@@ -1,4 +1,4 @@
-const NavSwiper = new Swiper('.promotion .swiper-container', {
+let NavSwiper = new Swiper('.promotion .swiper-container', {
   autoplay: { // 자동 재생 여부
     delay: 4000
   },
@@ -13,8 +13,8 @@ const NavSwiper = new Swiper('.promotion .swiper-container', {
   },
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.promotion .swiper-button-next',
+    prevEl: '.promotion .swiper-button-prev',
   },
   on: {
     init: function () {
@@ -47,20 +47,20 @@ let bestSwiper = new Swiper('.best .swiper-container', {
   loop: true,
 
   navigation: {
-    nextEl: '.button__next',
-    prevEl: '.button__prev',
+    nextEl: '.best .button__next',
+    prevEl: '.best .button__prev',
   },
 })
 
-const delSwiper = new Swiper('.delevery__banner .swiper-container', {
+let delSwiper = new Swiper('.delevery__banner .swiper-container', {
   loop: true,
   navigation : { 
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.delevery__banner .swiper-button-next',
+    prevEl: '.delevery__banner .swiper-button-prev',
 	},
 })
 
-const serSwiper = new Swiper('.video .swiper-container', {
+let serSwiper = new Swiper('.video .swiper-container', {
   autoplay: { 
     delay: 4000
   },
@@ -68,12 +68,12 @@ const serSwiper = new Swiper('.video .swiper-container', {
   centeredSlides: true, 
   loop: true, 
   navigation: {
-    nextEl: '.button__next',
-    prevEl: '.button__prev',
+    nextEl: '.video .button__next',
+    prevEl: '.video .button__prev',
   },
 })
 
-const chaSwiper = new Swiper('.chance .swiper-container', {
+let chaSwiper = new Swiper('.chance .swiper-container', {
   autoplay: { 
     delay: 1000
   },
@@ -82,8 +82,8 @@ const chaSwiper = new Swiper('.chance .swiper-container', {
   centeredSlides: true, 
   loop: true, 
   navigation: {
-    nextEl: '.button__next',
-    prevEl: '.button__prev',
+    nextEl: '.chance .button__next',
+    prevEl: '.chance .button__prev',
   },
 })
 
