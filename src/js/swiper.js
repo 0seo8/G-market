@@ -39,7 +39,7 @@ let NavSwiper = new Swiper('.promotion .swiper-container', {
 
 let bestSwiper = new Swiper('.best .swiper-container', {
   autoplay: {
-    delay: 4000
+    delay: 3000
   },
   slidesPerView: 5,
   slidesPerGroup: 5,
@@ -47,7 +47,7 @@ let bestSwiper = new Swiper('.best .swiper-container', {
   loop: true,
 
   navigation: {
-    nextEl: '.button__next',
+    nextEl: '.button__next ',
     prevEl: '.button__prev',
   },
 })

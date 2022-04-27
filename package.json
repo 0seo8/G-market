@@ -1,7 +1,7 @@
 {
   "name": "g-market",
   "version": "1.0.0",
-  "description": "",
+  "description": "[▶원본 사이트](https://www.gmarket.co.kr/)",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --mode development",
