@@ -1,5 +1,13 @@
 //헤더영역
+.is--active + .global__list {
+  display: flex !important;
+}
 
+.is--active {
+  .arrow {
+    transform: rotateX(180deg);
+  }
+}
 
 .header__inner {
   position: relative;
@@ -212,24 +220,44 @@
           border: 0;
           background-color: transparent;
           color: $booking-color-gray-700;
-          
-          &::after, &::before {
-            content: '';
-            position: absolute;
-            right: -1rem;
-            top: 1.2rem;
-            transform: translateY(-50%);
+          margin-right: 2px;
+          transition:width 2s, height 2s, background-color 2s, transform 2s;
+          .is--active{
+            .arrow {
+              transform: rotate(180deg);
+            }
           }
-          &::before {
-            border-left: 5px solid transparent;
-            border-right: 5px solid transparent;
-            border-top: 5px solid $booking-color-gray-700;
+          .arrow {
+            width: 0.6rem;
+            height: 0.4rem;
+            @include sprite-img (-378px -24px);
+            background-image: url(~assets/images/sprite__common.png);
+            background-size: 400px auto;
+            margin-left: 8px;
           }
-          &::after {
-            border-left: 5px solid transparent;
-            border-right: 5px solid transparent;
-            border-top: 5px solid #fff;
-            top: 9.5px;
+        }
+        .global__list {
+          display: none;
+          position: absolute;
+          right: 0;
+          flex-flow: column nowrap;
+          border: 1px solid $booking-color-gray-700;
+          z-index:100;
+          background-color: $booking-color-white;
+          width: 10.8rem;
+          padding: 0;
+          .global__list__item {
+            padding: 0.1rem;
+            &:first-child{
+              border-bottom: 1px solid $booking-color-gray-300;
+            }
+          }
+          .global__item__link {
+            width: 100%;
+            display: block;
+            padding: 1.1rem 3rem;
+            font-size: 1.4rem;
+            color: $booking-color-gray-700;
           }
         }
       }

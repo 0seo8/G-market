@@ -29,8 +29,8 @@ export function selectTab(tabParent) {
 }
 
 
-export function clickBtn () {
-  const btn = document.querySelector('.salesService__btn');
+export function clickBtn (target) {
+  const btn = document.querySelector(target);
 
   function addActive(e){
     setTimeout(() => btn.classList.add('is--active'));

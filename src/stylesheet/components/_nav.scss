@@ -69,7 +69,10 @@
             line-height: 4rem;
             width: 100%;
             height: 100%;
-
+            &:hover {
+              background-color: #fff;
+              color: $booking-color-green-600;
+            }
             .show {
               background-color: $booking-color-white;
               z-index: 2;

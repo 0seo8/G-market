@@ -13,9 +13,3 @@ export function hiddenPro() {
   console.log('close!')
 }
 
-const closeBtn = document.querySelector('.btn-close')
-const openBtn = document.querySelector('.button__more')
-
-closeBtn.addEventListener('click', showPro )
-openBtn.addEventListener('click', hiddenPro )
-
