@@ -38,18 +38,18 @@ let NavSwiper = new Swiper('.promotion .swiper-container', {
 });
 
 let bestSwiper = new Swiper('.best .swiper-container', {
-  autoplay: {
-    delay: 3000
-  },
+  autoplay: true.valueOf,
+  loop: true,
   slidesPerView: 5,
+  slidesPerGroupSkip: 1,
   slidesPerGroup: 5,
   loopFillGroupWithBlank: true,
-  loop: true,
 
   navigation: {
     nextEl: '.button__next ',
     prevEl: '.button__prev',
   },
+  
 })
 
 let delSwiper = new Swiper('.delevery__banner .swiper-container', {

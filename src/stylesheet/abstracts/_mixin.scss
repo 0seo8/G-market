@@ -15,6 +15,7 @@ $sprite-url: '~assets/icons/sprite__homemain.svg';
   background-image: url($sprite-url);
   background-repeat: no-repeat;
   background-position: $sprite-position;
+  display: inline-block;
 }
 
 @mixin multi-ellipsis($font-size, $line-height, $lines) {

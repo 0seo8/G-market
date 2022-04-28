@@ -1,5 +1,3 @@
-
-
 const get = target =>  document.querySelector(target)
 const $bestList = get('.best__list')
 

@@ -161,6 +161,7 @@
   [class*="__list"] {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   [class*="__item"] {

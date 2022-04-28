@@ -3,15 +3,11 @@ export function selectTab(tabParent) {
   const tabContentItems = document.querySelectorAll(`.${tabParent} .tab__list`);
   const gotoLink = document.querySelector(`.${tabParent} #gotoLink`)
 
-  function selectItem() {
+  function selectItem(e) {
     const tabContentItem = document.querySelector(`.${tabParent} #${this.id}-content`);
     removeShow();
     tabContentItem.classList.add('show');
-    if(gotoLink) {
-      gotoLink.innerText = this.innerText + ' 바로가기';
-    } else {
-      reset()
-    }
+    gotoLink? gotoLink.innerText = this.innerText + ' 바로가기':reset()
   }
   
   function removeShow() {
