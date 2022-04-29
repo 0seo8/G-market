@@ -36,12 +36,38 @@
       width: 38rem;
       height: 30rem;
 
-      > img {
-        background-color: $booking-color-gray-200;
-        width: 37.9rem;
-      }
     }
 
+    .product__image {
+      overflow: hidden;
+      position: relative;
+      width: 37.9rem;
+      border-radius: 20px;
+      border: 1px solid rgba(0,0,0, 0.07);
+      &:hover {
+        img {
+          transform: scale(1.15);
+        }
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        box-sizing: content-box;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        // background-color: rgba(0, 0, 0, 0.03);
+      }		
+      img {
+        display: block;
+        transition: transform .2s cubic-bezier(.165, .84, .44, 1), -webkit-transform .2s cubic-bezier(.165, .84, .44, 1);
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+      }
+    }
     .swiper-slide-active {
       opacity: 1;
     }

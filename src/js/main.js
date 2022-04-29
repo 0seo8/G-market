@@ -15,6 +15,7 @@ clickBtn('.salesService__btn')
 clickBtn('.global__plus')
 goTo()
 
+
 const closeBtn = document.querySelector('.btn-close')
 const openBtn = document.querySelector('.button__more')
 
