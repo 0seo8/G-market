@@ -6,7 +6,6 @@ import { goTo } from './gototop.js';
 import {showPro, hiddenPro } from './Btn.js'
 import { addActiveClass } from './header.js'
 
-renderItem()
 
 selectTab('delivery__Gmarket')
 selectTab('delivery__smile')
