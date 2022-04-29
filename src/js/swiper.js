@@ -1,3 +1,6 @@
+import { renderItem } from './best.js';
+renderItem()
+
 let NavSwiper = new Swiper('.promotion .swiper-container', {
   autoplay: { // 자동 재생 여부
     delay: 4000
@@ -41,7 +44,6 @@ let bestSwiper = new Swiper('.best .swiper-container', {
   autoplay: true.valueOf,
   loop: true,
   slidesPerView: 5,
-  slidesPerGroupSkip: 1,
   slidesPerGroup: 5,
   loopFillGroupWithBlank: true,
 
@@ -86,7 +88,5 @@ let chaSwiper = new Swiper('.chance .swiper-container', {
     prevEl: ' .button__prev',
   },
 })
-
-
 
 export { NavSwiper, bestSwiper, delSwiper, serSwiper, chaSwiper}
