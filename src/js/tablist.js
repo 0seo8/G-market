@@ -41,8 +41,6 @@ export function clickBtn (target) {
   }
 
   btn.addEventListener('click', addActive )
-  btn.addEventListener('mouseenter', addActive);
-  btn.addEventListener('mouseleave', removeActive);
   btn.addEventListener('focusin', addActive);
   btn.addEventListener('focusout', removeActive);
 }
