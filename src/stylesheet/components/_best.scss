@@ -49,6 +49,13 @@ section.best.inner{
   .product__card {
     text-align: center;
     margin: 0 !important;
+
+    
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
+    }
     
     .image--dimmed-layer {
       overflow: hidden;
