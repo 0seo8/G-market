@@ -5,16 +5,26 @@ export function selectTab(tabParent) {
 
   function selectItem(e) {
     const tabContentItem = document.querySelector(`.${tabParent} #${this.id}-content`);
+    removeHover();
     removeShow();
+    this.classList.add('tab-Hovered');
     tabContentItem.classList.add('show');
-    gotoLink? gotoLink.innerText = this.innerText + ' 바로가기':reset()
+    gotoLink? gotoLink.innerText = this.innerText + ' 바로가기': reset()
   }
   
+  function removeHover() {
+    tabItems.forEach(item => {
+      console.log('실행중?')
+      item.classList.remove('tab-Hovered');
+    });
+  }
+
   function removeShow() {
     tabContentItems.forEach(item => {
       item.classList.remove('show');
     });
   }
+  
 
   function reset() {
     tabItems.forEach(item => {
@@ -22,25 +32,12 @@ export function selectTab(tabParent) {
       item.addEventListener('mouseleave', removeShow )
     });
   }
+
   tabItems.forEach(item => {
-    item.addEventListener('click', selectItem )
-    item.addEventListener('mouseover', selectItem )
+    console.log(item)
+    item.addEventListener('click', selectItem);
   });
 }
 
-
-export function clickBtn (target) {
-  const btn = document.querySelector(target);
-
-  function addActive(e){
-    setTimeout(() => btn.classList.add('is--active'));
-  }
-  
-  function removeActive(e){
-    setTimeout(() => btn.classList.remove('is--active'));
-  }
-
-  btn.addEventListener('click', addActive )
-  btn.addEventListener('focusin', addActive);
-  btn.addEventListener('focusout', removeActive);
-}
+selectTab('delivery__Gmarket')
+selectTab('delivery__smile')

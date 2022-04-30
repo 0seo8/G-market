@@ -1,4 +1,4 @@
-export function goTo () {
+function goTo () {
   const toTopEl = document.querySelector('#to-top')
   window.addEventListener('scroll', _.throttle(function () {
     if (window.scrollY > 500) {
