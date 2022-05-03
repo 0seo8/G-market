@@ -1,5 +1,5 @@
 const categoryBtn = document.querySelectorAll('.category__button')
-const categorydepth = document.querySelectorAll('.category__depth2')
+const categoryDepth = document.querySelectorAll('.category__depth2')
 
 function selectItem(e) {
   const tabContentItem = document.querySelector(`.category #${this.id}-content`);
@@ -14,7 +14,7 @@ function removeHover() {
 }
 
 function removeShow() {
-  categorydepth.forEach(item => {
+  categoryDepth.forEach(item => {
     item.classList.remove('show');
   });
 }
