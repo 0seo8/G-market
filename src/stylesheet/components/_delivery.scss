@@ -22,26 +22,26 @@
 	flex-flow: row nowrap;
 	justify-content: space-between;
 
-	.delivery__headline  {
+	&__headline  {
 		padding-right: 1rem;
 	}
 	.deliveryUnit {
 		width: 57.4rem;
 	}
 
-	.delivery__Gmarket {
-		.delevery__banner {
+	&__Gmarket {
+		.delivery__banner {
 			background-color: $booking-color-green-400;
 		}
 	}
 
-	.delivery__smile {
-		.delevery__banner {
+	&__smile {
+		.delivery__banner {
 			background-color: $booking-color-blue-300;
 		}
 	}
 
-	.delevery__banner {
+	&__banner {
 		overflow: hidden;
 		position: relative;
 		margin-top: 1.8rem;
@@ -49,117 +49,106 @@
 		width: 100%;
 		height: 28.5rem;
 
-		.delevery__title {
-			margin: 0;
-			letter-spacing: -.5px;
-			height: 5.1rem;
-			color: $booking-color-white;
-			text-align: center;
-			line-height: 5.1rem;
-			background-color: rgba(0, 0, 0, .05);
-		}
-
 		.swiper-slide {
 			width: 100%;
 			height: 28.5rem;
 		}
-
 		.swiper-button-next,
 		.swiper-button-prev {
 			margin: 0;
 			top: 35%;
 		}
 
-		.delevery__banner__link {
+		&__link {
 			display: block;
 			height: 23.4rem;
 
-			.product__info {
-				position: relative;
+		}
+		.product__info {
+			position: relative;
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: center;
+			margin-top: 1.5rem;
+			.text {
 				display: flex;
-				flex-flow: row nowrap;
+				flex-flow: column nowrap;
 				justify-content: center;
-				margin-top: 1.5rem;
-
-				.text {
-					display: flex;
-					flex-flow: column nowrap;
-					justify-content: center;
-					align-items: center;
-					margin-right: 1rem;
-					color: $booking-color-white;
-
-					.product-brand-logo__image {
-						display: block;
-						width: 12rem;
-						height: 2.1rem;
-
-						.brand {
-							letter-spacing: 0;
-							font-size: 1.8rem;
-
-						}
-					}
-
-					.product__title {
-						font-family: Gmarket Sans, 'Gmarket Sans', sans-serif;
-						font-size: 3rem;
-						line-height: 3.3rem;
-						// margin: 2rem;
-						padding: 2rem;
-					}
-
-					.prodcut__sub-title {
-						opacity: .6;
+				align-items: center;
+				margin-right: 1rem;
+				color: $booking-color-white;
+				.product-brand-logo__image {
+					display: block;
+					width: 12rem;
+					height: 2.1rem;
+					.brand {
+						letter-spacing: 0;
+						font-size: 1.8rem;
 					}
 				}
-
-				.product__image {
-					overflow: hidden;
-					position: relative;
-					border-radius: 50%;
-					&:hover {
-						img {
-							transform: scale(1.2);
-						}
+				.product__title {
+					font-family: Gmarket Sans, 'Gmarket Sans', sans-serif;
+					font-size: 3rem;
+					line-height: 3.3rem;
+					padding: 2rem;
+				}
+				.prodcut__sub-title {
+					opacity: .6;
+				}
+			}
+			.product__image {
+				overflow: hidden;
+				position: relative;
+				border-radius: 50%;
+				&:hover {
+					img {
+						transform: scale(1.2);
 					}
-					&::before {
+				}
+				&::before {
+					content: '';
+					position: absolute;
+					box-sizing: content-box;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					border-radius: 50%;
+					z-index: 10;
+					background-color: rgba(0, 0, 0, 0.03);
+				}		
+				img {
+					display: block;
+					transition: transform .2s cubic-bezier(.165, .84, .44, 1), -webkit-transform .2s cubic-bezier(.165, .84, .44, 1);
+					position: relative;
+					&::after {
 						content: '';
-						position: absolute;
+						width: 22.15rem;
+						height: 22.15rem;
 						box-sizing: content-box;
+						position: absolute;
 						top: 0;
 						left: 0;
 						right: 0;
 						bottom: 0;
 						border-radius: 50%;
-						z-index: 10;
-						background-color: rgba(0, 0, 0, 0.03);
+						z-index: 20;
+						border: 1.5px solid rgba(0,0,0, 0.07);	
 					}		
-					img {
-						display: block;
-						transition: transform .2s cubic-bezier(.165, .84, .44, 1), -webkit-transform .2s cubic-bezier(.165, .84, .44, 1);
-						position: relative;
-						&::after {
-							content: '';
-							width: 22.15rem;
-							height: 22.15rem;
-							box-sizing: content-box;
-							position: absolute;
-							top: 0;
-							left: 0;
-							right: 0;
-							bottom: 0;
-							border-radius: 50%;
-							z-index: 20;
-							border: 1.5px solid rgba(0,0,0, 0.07);	
-						}		
-					}
 				}
 			}
 		}
 
 	}
-
+	&__title {
+		margin: 0;
+		letter-spacing: -.5px;
+		height: 5.1rem;
+		color: $booking-color-white;
+		text-align: center;
+		line-height: 5.1rem;
+		background-color: rgba(0, 0, 0, .05);
+	}
 	.tabs {
 		margin: 2.5rem 2rem 1rem;
 		position: relative;

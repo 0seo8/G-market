@@ -9,7 +9,7 @@
     margin-bottom: 2rem;
   }
 
-  .sub-event__main {
+  &__main {
     height: 33.2rem;
     img {
       width: 100%;
@@ -17,12 +17,11 @@
       border-radius: .6rem;
     }
   }
-
   .chance {
     flex-grow: 1;
     width: 71rem;
     position: relative;
-    .chance__contents {
+    &__contents {
       border: 1px solid $booking-color-gray-500;
       border-radius: .6rem;
       height: 33.2rem;
@@ -30,51 +29,49 @@
       align-items: center;
       padding: 0 4rem;
     }
-
-    .swiper-wrapper {
-      position: relative;
+  }
+  .swiper-wrapper {
+    position: relative;
+    display: flex;   
+    .product__card {
       display: flex;
-      .product__card {
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        .product__image {
-          overflow: hidden;
-          position: relative;
-          width: 18rem;
-          border-radius: 3px;
-          border: 1px solid $booking-color-gray-300;
-          &:hover {
-            img {
-              transform: scale(1.15);
-            }
-          }
-          &::before {
-            content: '';
-            position: absolute;
-            box-sizing: content-box;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 10;
-            // background-color: rgba(0, 0, 0, 0.03);
-          }		
+      flex-flow: column nowrap;
+      align-items: center;
+      .product__image {
+        overflow: hidden;
+        position: relative;
+        width: 18rem;
+        border-radius: 3px;
+        border: 1px solid $booking-color-gray-300;
+        &:hover {
           img {
-            display: block;
-            transition: transform .2s cubic-bezier(.165, .84, .44, 1), -webkit-transform .2s cubic-bezier(.165, .84, .44, 1);
-            position: relative;
-            width: 100%;
-            overflow: hidden;
+            transform: scale(1.15);
           }
         }
-  
-      }
-      .product__price {
-        display: block;
+        &::before {
+          content: '';
+          position: absolute;
+          box-sizing: content-box;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 10;
+        }		
+        img {
+          display: block;
+          transition: transform .2s cubic-bezier(.165, .84, .44, 1), -webkit-transform .2s cubic-bezier(.165, .84, .44, 1);
+          position: relative;
+          width: 100%;
+          overflow: hidden;
+        }
       }
     }
+    .product__price {
+      display: block;
+    }
   }
+
   .button__next,
   .button__prev {
     top: 50%;

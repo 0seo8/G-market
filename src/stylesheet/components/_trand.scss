@@ -1,16 +1,16 @@
 .trand-product {
   margin-top: 6rem;
 
-  .trand-product__headline {
+  &__headline {
     margin-bottom: 2rem;
     padding-right: 1rem;
   }
 
-  .trand-product__main {
+  &__main {
     display: flex;
   }
 
-  .trand-product__content {
+  &__content {
     position: relative;
     height: 34.2rem;
     width: 73.5rem;
@@ -18,27 +18,29 @@
     background-color: $booking-color-white-400;
     border-radius: 0 6px 6px 0;
 
-    .trand-productt__list {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+  }
 
-      img {
-        overflow: hidden;
-        border-radius: 50%;
-      }
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-      .product__caption {
-        margin-top: 1rem;
-        line-height: 2;
-        font-size: 1.4rem;
-        color: $booking-color-black-200;
-        letter-spacing: -0.5px;
-        word-break: break-all;
-        text-align: center;
-      }
+    img {
+      overflow: hidden;
+      border-radius: 50%;
+    }
+
+    .product__caption {
+      margin-top: 1rem;
+      line-height: 2;
+      font-size: 1.4rem;
+      color: $booking-color-black-200;
+      letter-spacing: -0.5px;
+      word-break: break-all;
+      text-align: center;
     }
   }
+
 
 
 }

@@ -20,20 +20,18 @@
     display: flex;
     padding: 1.5rem 0 1.7rem;
     border-bottom: 1px solid $booking-color-gray-300;
+    &__list {
+      flex-grow: 1;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      margin: 0;
+    }  
   }
-
-  .customerGuide__list {
-    flex-grow: 1;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    margin: 0;
-  }
-
   .salesService {
     position: relative;
 
-    .salesService__btn {
+    &__btn {
       position: relative;
       width: 11.7rem;
       height: 3.4rem;
@@ -49,7 +47,7 @@
       padding-left: .5rem;
     }
 
-    .salesService__list {
+    &__list {
       position: absolute;
       right: 0;
       top: 3.8rem;
@@ -80,13 +78,13 @@
     justify-content: space-between;
     border-bottom: 1px solid $booking-color-gray-300;
 
-    .Information__title {
+    &__title {
       line-height: 2rem;
       margin: 0;
       font-size: 1.4rem;
     }
 
-    .Information__item {
+    &__item {
       font-size: 1.3rem;
       color: $booking-color-white-800;
       letter-spacing: -.5px;

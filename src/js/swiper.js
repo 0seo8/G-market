@@ -54,7 +54,7 @@ new Swiper('.best .swiper-container', {
   
 })
 
-new Swiper('.delevery__banner .swiper-container', {
+new Swiper('.delivery__banner .swiper-container', {
   loop: true,
   navigation : { 
     nextEl: '.swiper-button-next',

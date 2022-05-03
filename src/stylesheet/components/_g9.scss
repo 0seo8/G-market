@@ -3,15 +3,15 @@
   margin-top: 5rem;
   background-color: #f2f2f2;
 
-  .direct-purchase__headline {
+  &__headline {
     margin-bottom: 2rem;
   }
 
-  .direct-purchase__main {
+  &__main {
     display: flex;
   }
 
-  .direct-purchase__content {
+  &__content {
     flex-grow: 1;
     padding: 0 4rem;
     height: 39.2rem;
@@ -28,7 +28,7 @@
     width: 100%;
   }
 
-  .direct-purchase__title {
+  &__title {
     margin-top: 4rem;
     text-align: center;
     .sub-title {

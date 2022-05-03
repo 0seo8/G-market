@@ -17,4 +17,4 @@ function goToTop () {
     })
   })
 }
-goTo()
+goToTop()
