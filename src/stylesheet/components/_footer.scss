@@ -1,8 +1,8 @@
-.is--active + .salesService__list {
+.--active + .salesService__list {
   display: flex !important;
 }
 
-.is--active {
+.--active {
   .material-symbols-outlined {
     transform: rotateX(180deg);
   }

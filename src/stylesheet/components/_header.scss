@@ -1,9 +1,9 @@
 //헤더영역
-.is--active + .global__list {
+.--active + .global__list {
   display: flex !important;
 }
 
-.is--active {
+.--active {
   .arrow {
     transform: rotateX(180deg);
   }
@@ -222,7 +222,7 @@
           color: $booking-color-gray-700;
           margin-right: 2px;
           transition:width 2s, height 2s, background-color 2s, transform 2s;
-          .is--active{
+          .--active{
             .arrow {
               transform: rotate(180deg);
             }
