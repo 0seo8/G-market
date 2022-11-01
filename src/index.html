@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" class="no-js">
 
 <head>
   <meta charset="UTF-8">
@@ -33,6 +33,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="stylesheet"
     href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script> (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement) </script>
 
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
   <!--GSAP & ScrollToPlugin-->
@@ -47,9 +48,10 @@
   <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
   <!--ScrollMagic-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <style> .js #fouc {display: none} </style>
 </head>
 
-<body class="preload">
+<body id="fouc">
   <!--   HEADER영역   -->
   <header class="header">
     <div class="header__inner">
@@ -2817,7 +2819,8 @@
   <div id="to-top" class="inner">
     <div class="to-top-icon"></div>
   </div>
-
+<!-- /#fouc -->
+    <script> document.getElementById("fouc").style.display="block"; </script>
 </body>
 
 </html>
